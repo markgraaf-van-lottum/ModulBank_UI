@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Покупка Кассы (Шаг 1)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/style_kassa_buy.css">
+	<link rel="stylesheet" href="css/other-screens-link.css">
+</head>
+<body>
+	<!-- prev/next screen -->
+	<a class="other-screens-link prev" href="auth--bank.html"></a>
+	<a class="other-screens-link next" href="contragents.html"></a>
+
+<section class="main__new">
+	<!-- логотип -->
+	<a class="logo_modulkassa"></a>
+	<div class="buy_kassa">
+	
+		<div class="page_wizard">
+			<div class="wizard_steps  steps2">
+				<div class="step  active">
+					<div class="label">1</div>
+					<div class="name">Касса и тариф</div>
+				</div>
+				<div class="step">
+					<div class="label">2</div>
+					<div class="name">Данные и доставка</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Секция КАССА -->
+		<div class="legend"><span>Касса</span></div>
+	
+		<flex>
+			<!-- Мобильная касса -->
+			<div class="buy_kassa_amount  mobile">
+				<h3>Мобильная касса</h3>
+				<ul class="point">
+					<li>Объединяет планшет, сканер штрихкодов,<br> принтер чеков и&nbsp;умещается в&nbsp;одной руке</li>
+					<li>24&nbsp;часа бесперерывной работы</li>
+					<li>Подключается к&nbsp;1С&nbsp;и&nbsp;МойСклад</li>
+					<li>Подходит для курьерских служб, кафе, розничных и&nbsp;интернет-магазинов, подрядных организаций и&nbsp;др.</li>
+					<li>Договор с&nbsp;ОФД включен</li>
+				</ul>
+				
+				<div class="counter_container">
+					<div class="desc">Выберите количество</div>
+					<div class="counter">
+						<a class="count_ctrl">&minus;</a>
+						<input type="text" placeholder="0" value="-3">
+						<a class="count_ctrl">+</a>
+					</div>
+				</div>
+			</div>
+				
+			<!-- Стационарная касса -->
+			<div class="buy_kassa_amount  stationary">
+				<h3>Стационарная касса</h3>
+				<ul class="point">
+					<li>В&nbsp;стоимость входит кассовый компьютер МультиПОС и&nbsp;принтер чеков ВИКИ Принт&nbsp;57</li>
+					<li>7&nbsp;портов для дополнительного оборудования</li>
+					<li>Поддерживает УТМ ЕГАИС и&nbsp;работает с&nbsp;1С, МойСклад</li>
+					<li>Подходит для кафе, магазинов, салонов красоты, аптек, СТО и&nbsp;др.</li>
+					<li>Договор с&nbsp;ОФД включен</li>
+				</ul>
+				
+				<div class="counter_container">
+					<div class="desc">Выберите количество</div>
+					<div class="counter">
+						<a class="count_ctrl">&minus;</a>
+						<input type="text" placeholder="0" value="8">
+						<a class="count_ctrl">+</a>
+					</div>
+				</div>
+			</div>
+		</flex>
+
+
+		<!-- Секция ТАРИФ -->
+		<div class="legend">
+			<span>Тариф</span>
+			<a class="icon-info" b365-tooltip title="Инфа о том, что у нас на обе кассы применяется только один тариф, чтобы не возникали вопросы в стиле: «А как выбрать тариф для второй кассы?» и тд"></a>
+		</div>
+
+		<flex class="tarif">
+			<div>Аренда</div>
+			<div>
+				<p class="label">Первый взнос</p>
+				<p class="value">2 500 ₽</p>
+			</div>
+			<div>
+				<p class="label">Ежемесячный платеж</p>
+				<p class="value  monthly">2 500 ₽</p>
+			</div>
+			<div>
+				<a class="button small light">Выбрать</a>
+			</div>
+		</flex>
+
+		<!-- допкласс selected когда тариф выбран -->
+		<flex class="tarif  selected">
+			<div>Покупка</div>
+			<div>
+				<p class="label">Первый взнос</p>
+				<p class="value">21 500 ₽</p>
+			</div>
+			<div>
+				<p class="label">Ежемесячный платеж</p>
+				<p class="value  monthly">1 500 ₽</p>
+			</div>
+			<div>
+				<a class="button small light icon-delivered"></a>
+			</div>
+		</flex>
+
+
+		<!-- Секция ДОП. ОБОРУДОВАНИЕ -->
+		<div class="legend"><span>Дополнительное оборудование</span></div>
+		<div class="buy_kassa_fiscal">
+			<h3>Фискальный накопитель ФН-1 на 13 месяцев</h3>
+			<ul class="point">
+				<li>Подписывает, шифрует, отправляет кассовые чеки в ОФД и налоговую.</li>
+				<li>Хранит информацию о всех продажах и возвратах в специальном архиве.</li>
+				<li>Обязателен для предпринимателей на ОСН, УСН, ПСН и ЕСХН.</li>
+				<li><strong>С 1 июля 2018 года — для предпринимателей на ЕВНД</strong></li>
+			</ul>
+
+			<div class="counter_container">
+				<div class="desc">Стоимость</div>
+				<div class="value">8 000 ₽</div>
+			</div>
+			<div class="counter_container">
+				<div class="desc">Выберите количество</div>
+				<div class="counter">
+					<input type="text" placeholder="0" value="0">
+					<a class="count_ctrl">&minus;</a>
+					<a class="count_ctrl">+</a>
+				</div>
+			</div>
+		</div>
+
+	
+		<!-- Общая стоимость -->
+		<div class="total_cost">
+			<div>0 ₽</div>
+			<!-- Класс noclick, если тариф не выбран -->
+			<a class="button  middle  noclick">Далее</a>
+		</div>
+	</div>
+</section>
+
+</body>
+</html>

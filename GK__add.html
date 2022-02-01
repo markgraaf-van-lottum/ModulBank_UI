@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>ГК - Добавление</title>
+	<link rel="stylesheet" href="css/style_kassa.css">
+	<link rel="stylesheet" href="css/other-screens-link.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/init.js"></script>
+</head>
+<body>
+	<!-- prev/next screen -->
+	<a class="other-screens-link prev" href="gk.html"></a>
+	<a class="other-screens-link next" href="products__page_add--modificators.html"></a>
+
+	<!-- <include data-file="kassa_header.html"></include> -->
+	
+<header>
+	<div class="header_logo">
+		<a href="#">Модульбанк</a>
+	</div>
+
+	<div class="header_menu free_items">
+		<div class="header_menu_inner">
+			<ul>
+				<li><a><span>Статистика</span></a></li>
+				<li><a><span>Контрагенты</span></a></li>
+				<li><a><span>Скидки</span></a></li>
+				<li><a><span>Документы</span></a></li>
+				<li><a><span>Товары</span></a></li>
+				<li class="active"><a><span>Горячие клавиши</span></a></li>
+				<!-- <li class="active"><a><span>Горячие клавиши</span></a></li> -->
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="header_profile">
+
+		<!-- кнопка выйти -->
+		<div class="header_profile_logout">
+			<a href="#" class="icon-logout"></a>
+		</div>
+
+		<!-- кнопка настроек -->
+		<div class="header_profile_settigs">
+			<a href="#" class="icon-settings"></a>
+		</div>
+
+		<!-- название компании -->
+		<div class="header_profile_name">
+			<a href="#" class="icon-pos drop-target" data-theme="drop_header_pos">Имя ТочкиПродаж</a>
+			<div class="drop-content">
+				<div class="drop-content-inner">
+					<ul class="drop-menu f_small">
+						<li><a class="icon-check">Дмитриевская точка</a></li>
+						<li><a>Ленинский проспект</a></li>
+						<li><a>Ленинский проспект 2</a></li>
+						<li><a>Ленинский проспект 3</a></li>
+						<li><a>Бульвар Славы</a></li>
+						<li><a>Бульвар Славы (Веранда)</a></li>
+						<li><a>Бульвар Славы (Авто)</a></li>
+						<li><a class="icon-settings">Все точки продаж</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</header>
+
+<!-- Кнопка "Вверх" -->
+<!-- <a class="button_up"></a> -->
+
+<!-- кнопка открытия чата -->
+<!-- <div class="button_chat">
+	<label>7</label>
+	<a href="#"></a>
+</div> -->
+
+	<section class="main">
+
+		<div class="section_content  section_content__gk">
+			<div class="title_panel">
+				<h1>Вид кассы</h1>
+			</div>
+
+			<div class="gk_panel">
+				<div class="tabs_flat  tabs_flat__stretch">
+				     <a class="tab  tab__active">Товары</a>
+				     <a class="tab">Услуги Вкладка</a>
+				     <a class="tab">Вкладка 3</a>
+				     <a class="tab">Вкладка 4</a>
+				     <a class="tab">Длинное название вкладки</a>
+				     <a class="tab">Вкладка 6</a>
+				     <a class="tab">Вкладка  Вкладка 7</a>
+				     <a class="tab">Вкладка 8</a>
+				     <a class="tab">Вкладка 9</a>
+				     <a class="tab  tab__add">+ Добавить вкладку</a>
+				</div>
+
+				<div class="gk_panel_controls">
+					<div class="control">
+						Название вкладки:
+						<input type="text" class="small  tab_name" value="Товары">
+					</div>
+
+					<div class="control">
+						Порядок:
+						<div class="counter  small">
+							<a class="count_ctrl">&minus;</a>
+							<input type="text" placeholder="0" value="1">
+							<a class="count_ctrl">+</a>
+						</div>
+					</div>
+
+					<div class="control">
+						<input type="checkbox" name="c5" id="33">
+						<label for="33" class="label_check  switcher"><i class="icon"></i><span>Показывать статистику</span></label>
+					</div>
+
+					<div class="control">
+						<a class="button  clean  small">Удалить вкладку</a>
+					</div>
+				</div>
+
+				<!-- Добавляем класс cell_selected когда выбрана ячейка -->
+				<div class="gk_panel_buttons  cell_selected">
+					<!-- Пустые ячейки -->
+					<div class="row1  col1"><div class="cell"></div></div>
+					<div class="row1  col2"><div class="cell"></div></div>
+					<div class="row1  col3"><div class="cell"></div></div>
+					<div class="row1  col4"><div class="cell"></div></div>
+					<div class="row1  col5"><div class="cell"></div></div>
+					<div class="row1  col6"><div class="cell"></div></div>
+					<div class="row1  col7"><div class="cell"></div></div>
+					<div class="row1  col8"><div class="cell"></div></div>
+					<div class="row1  col9"><div class="cell"></div></div>
+					<div class="row1  col10"><div class="cell"></div></div>
+					<div class="row2  col1"><div class="cell"></div></div>
+					<div class="row2  col2"><div class="cell"></div></div>
+					<div class="row2  col3"><div class="cell"></div></div>
+					<div class="row2  col4"><div class="cell"></div></div>
+					<div class="row2  col5"><div class="cell"></div></div>
+					<div class="row2  col6"><div class="cell"></div></div>
+					<div class="row2  col7"><div class="cell"></div></div>
+					<div class="row2  col8"><div class="cell"></div></div>
+					<div class="row2  col9"><div class="cell"></div></div>
+					<div class="row2  col10"><div class="cell"></div></div>
+					<div class="row3  col1"><div class="cell"></div></div>
+					<div class="row3  col2"><div class="cell"></div></div>
+					<div class="row3  col3"><div class="cell"></div></div>
+					<div class="row3  col4"><div class="cell"></div></div>
+					<div class="row3  col5"><div class="cell"></div></div>
+					<div class="row3  col6"><div class="cell"></div></div>
+					<div class="row3  col7"><div class="cell"></div></div>
+					<div class="row3  col8"><div class="cell"></div></div>
+					<div class="row3  col9"><div class="cell"></div></div>
+					<div class="row3  col10"><div class="cell"></div></div>
+
+
+					<!-- Заполненные ячейки -->
+					<div class="row1  col1  cell_w3  cell_h1"><div class="cell" style="background: plum;">Бананы</div></div>
+					<div class="row1  col9  cell_w1  cell_h2"><div class="cell" style="background: #D98519;"></div></div>
+					<!-- добавляем класс selected когда выбрана ячейка -->
+					<div class="row1  col4  cell_w1  cell_h1  selected"><div class="cell" style="background: #B82C2C;">Яблоки</div></div>
+					<!-- Для категории - класс category и вкладываем ссылку с классом category_open -->
+					<div class="row1  col10  cell_w1  cell_h1"><div class="cell  category" style="background: #0078C3;">Овощная Ореховая Категория<a class="category_open">открыть</a></div></div>
+					<div class="row2  col3  cell_w2  cell_h2"><div class="cell" style="background: #8AC540;">Груши</div></div>
+					<div class="row2  col1  cell_w1  cell_h1"><div class="cell" style="background: #0078C3;">Творог жирность 20%</div></div>
+					<div class="row2  col2  cell_w1  cell_h1"><div class="cell" style="background: #0078C3;">Масло Сливочное</div></div>
+					<div class="row3  col6  cell_w3  cell_h1"><div class="cell" style="background: #0078C3;"></div></div>
+					<div class="row3  col1  cell_w2  cell_h1"><div class="cell" style="background: #D98519;">Хлеб на молочной сыворотке</div></div>
+					<div class="row3  col10  cell_w1  cell_h1"><div class="cell  category" style="background: #0078C3;">Фрукты<a class="category_open">открыть</a></div></div>
+
+
+					<!-- Всплывашка со настройками ячейки -->
+					<div class="gk_cell_properties_popup">
+						<div class="form_group  mb24">
+							<input type="radio" name="c2" id="110" checked>
+							<label for="110" class="label_check  mr24"><i class="icon"></i><span>Товар</span></label>
+
+							<input type="radio" name="c2" id="11">
+							<label for="11" class="label_check"><i class="icon"></i><span>Категория</span></label>
+						</div>
+
+						<div class="form_group">
+							<div class="input_group_title  w100">
+								<div class="input_title">Введите название</div>
+								<input type="text" class="w100">
+							</div>
+						</div>
+
+						<!-- Выбор товара -->
+						<div class="form_group">
+							<div class="input_group_title  w100">
+								<div class="input_title">Выберите товар</div>
+								<div class="jsRadSelect2  w100" data-placeholder="Селект" name="adfasd" id="adsf">
+									<option class="jsRadSelect2Options" value="1">Хлеб</option>
+									<option class="jsRadSelect2Options" value="2">Молоко</option>
+									<option class="jsRadSelect2Options" value="3">Каша</option>
+									<option class="jsRadSelect2Options" value="4">Банан</option>
+								</div>
+							</div>
+						</div>
+
+						<!-- Выбор цвета ячейки -->
+						<div class="form_group">
+							<div class="input_group_title  w100">
+								<div class="input_title">Цвет</div>
+								<div class="color_select">
+									<!-- Добавляем класс icon-check к выделенному цвету -->
+									<a style="background: #8AC540;"></a><a style="background: #0078C3;"></a><a style="background: #D98519;"></a><a class="icon-check" style="background: #B82C2C;"></a><a style="background: #3B3B3B;"></a><a style="background: #8B2451;"></a><a style="background: #009A87;"></a><a style="background: #493389;"></a><a style="background: #EDA;"></a><a style="background: pink;"></a><a style="background: plum;"></a><a style="background: #BAD;"></a><a style="background: tomato;"></a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Настройка размеров и положения ячейки -->
+						<div class="form_group">
+							<div class="cell_size  input_group_title  col  half">
+								<div class="input_title">Размер</div>
+
+								<div class="cell_props">
+									<div class="label">Ширина</div>
+									<div class="counter  small">
+										<a class="count_ctrl">&minus;</a>
+										<input type="text" placeholder="0" value="1">
+										<a class="count_ctrl">+</a>
+									</div>
+								</div>
+								
+								<div class="cell_props">
+									<div class="label">Высота</div>
+									<div class="counter  small">
+										<a class="count_ctrl">&minus;</a>
+										<input type="text" placeholder="0" value="1">
+										<a class="count_ctrl">+</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="cell_position  input_group_title  col  half">
+								<div class="input_title  ml8">Положение</div>
+
+								<div class="cell_props">
+									<div class="label">Строка</div>
+									<div class="counter  small">
+										<a class="count_ctrl">&minus;</a>
+										<input type="text" placeholder="0" value="1">
+										<a class="count_ctrl">+</a>
+									</div>
+								</div>
+
+								<div class="cell_props">
+									<div class="label">Столбец</div>
+									<div class="counter  small">
+										<a class="count_ctrl">&minus;</a>
+										<input type="text" placeholder="0" value="4">
+										<a class="count_ctrl">+</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="form_buttons  mt12">
+							<button class="button  small">Сохранить</button>
+							<button class="button  small  clean">Отмена</button>
+							<button class="button  small  clean  f_right">Удалить</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="gk_panel_footer">
+					Выберите ячейку для добавления товара на экран кассы. <br>Для редактирования выберите ту же ячейку.
+				</div>
+			</div>
+
+	</section>
+</body>
+</html>

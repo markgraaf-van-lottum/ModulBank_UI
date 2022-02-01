@@ -1,0 +1,109 @@
+.settings-panel {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 900px;
+	background: #FFF;
+	box-shadow: -4px 9px 25px rgba(49,68,93,.22);
+	z-index: 2;
+	user-select: none;
+}
+.settings__header {
+	height: 64px;
+	padding: 0 55px;
+	font-size: 24px;
+	line-height: 64px;
+	box-shadow: 0 0 12px rgba(36,48,54,.08), 
+					0 1px 1px rgba(36,48,54,.06);
+}
+.settings__header .close-button {
+	position: absolute;
+	top: 23px;
+	left: 20px;
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url(icons/icon--close.svg) center no-repeat;
+	cursor: pointer;
+}
+.settings__menu,
+.settings__content {
+	position: absolute;
+	top: 64px;
+	bottom: 0;
+}
+.settings__menu {
+	position: absolute;
+	top: 64px;
+	left: 0;
+	bottom: 0;
+	width: 222px;
+	padding: 38px 0;
+	border-right: 2px solid #F5F5F6;
+}
+.settings__content {
+	left: 222px;
+	right: 0;
+	padding: 0 32px;
+	overflow: overlay;
+}
+
+/* МЕНЮ */
+.settings__menu > * {
+	padding: 0 24px;
+}
+.settings__menu .menu-item {
+	font-size: 16px;
+	line-height: 40px;
+	cursor: pointer;
+	transition: color .2s;
+}
+.settings__menu .menu-item:hover {
+	color: #4971D0;
+}
+.settings__menu .menu-item.active {
+	color: #4971D0;
+	background: #F2F6FF;
+}
+.settings__menu .menu-item.active::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -2px;
+	bottom: 0;
+	width: 2px;
+	background: #4971D0;
+}
+.settings__menu .menu-item + .block-title {
+	margin-top: 32px;
+}
+
+
+/* УСЛУГИ */
+.settings__services h2 {
+	margin: 32px 0 16px;
+}
+.settings__services .service {
+	padding: 0 16px 16px 76px;
+}
+.settings__services .service i {
+	position: absolute;
+	top: 7px;
+	left: 0;
+	display: block;
+	width: 52px;
+	height: 52px;
+	background: center no-repeat;
+}
+.settings__services .service .title {
+	padding: 16px 0 4px;
+	font-size: 16px;
+	border-top: 1px solid #E6E7E9;
+}
+.settings__services .service .description {
+	color: #777C87;
+}
+.settings__services .service:last-child .description {
+	border-bottom: 1px solid #E6E7E9;
+}

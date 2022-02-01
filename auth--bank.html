@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Auth (Касса) - Банк</title>
+	<link rel="stylesheet" href="css/style_auth--kassa.css">
+	<link rel="stylesheet" href="css/other-screens-link.css">
+	<script src="js/init.js"></script>
+	<script src="js/jquery.min.js"></script>
+</head>
+<body>
+	<!-- prev/next screen -->
+	<a class="other-screens-link prev" href="portal__banners.html"></a>
+	<a class="other-screens-link next" href="buy_step1.html"></a>
+
+<!-- Обертки для React -->
+<div class="poss" id="root">
+	<div class="poss" data-reactroot="">
+		<div class="poss ">
+			<!-- react-empty: 5 -->
+			<div class="poss">
+				<div class="poss">
+
+
+<!-- AUTH -->
+<!-- <include data-file="auth/include/login.html"></include> -->
+<!-- <include data-file="auth/include/sms.html"></include> -->
+<!-- <include data-file="auth/include/pass-recovery.html"></include> -->
+<section class="auth">
+	
+	<a class="logo"></a>
+	
+	<!-- LOGIN - Kassa -->
+	<div class="login_form">
+		<div class="title">Добро пожаловать</div>
+		<div class="telephone_field">
+			<input type="email" placeholder="Почта">
+			<i class="icon-mail"></i>
+		</div>
+		<div>
+			<input type="password" placeholder="Пароль">
+			<i class="icon-password"></i>
+		</div>
+		<a class="button full">Войти</a>
+	</div>
+
+	<div class="links_forgot_reg">
+		<a>Забыли пароль?</a>
+		<a>Зарегистрироваться</a>
+	</div>
+
+</section>
+
+<!-- БАНК -->
+<section class="promo  bank">
+	<div class="wrapper">
+		<h1>Счет в банке</h1>
+		<p class="desc">Выгодный банк для бизнеса</p>
+		<a class="button  middle light">Узнать возможности</a>
+		<ul class="check_blue">
+			<li>МодульБанк – единственный банк в России, который работает только с малым бизнесом</li>
+			<li>Вместе со счетом в Модульбанке клиенты получают целую команду работников: бухгалтера, юриста и личного помощника</li>
+			<li>Мы заботимся о деньгах клиентов, поэтому страхуем вклады и выполняем нормативы ЦБ</li>
+		</ul>
+	</div>
+</section>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

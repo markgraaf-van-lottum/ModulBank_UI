@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>МодульБухгалтерия</title>
+	<link rel="stylesheet" href="css/style_buhgalteria.css">
+	<link rel="stylesheet" href="css/other-screens-link.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/init.js"></script>
+</head>
+<body>
+
+<!-- prev/next screen -->
+<a class="other-screens-link prev" href="buhgalteria.html"></a>
+<a class="other-screens-link next" href="index.html"></a>
+
+	<!-- <include data-file="buhgalteria_header.html"></include> -->
+	<!-- <%= require('html-loader!./buhgalteria_header.html') %> -->
+
+<header>
+	<!-- <div class="header_logo">
+		<a href="#"><strong>Модуль</strong>Бухгалтерия</a>
+	</div> -->
+
+	<!-- Меню + -->
+	<!-- <div class="header_add">
+		<a class="add drop-target" data-position="bottom center" data-theme="header_add_submenu"></a>
+		<div class="drop-content">
+			<div class="header_add_drop drop-content-inner inner_pad">
+
+				<div class="header_add__items_wrapper">
+					<div class="col1 ">
+						<a class="header_add__item">
+							<div class="item_icon  icon-user-add"></div>
+							<div class="item_name">Добавить клиента</div>
+						</a>
+					</div>
+					<div class="col2 ">
+						<a class="header_add__item">
+							<div class="item_icon  icon-round-check"></div>
+							<div class="item_name">Создать задачу</div>
+						</a>
+					</div>
+					<div class="col3 ">
+						<a class="header_add__item">
+							<div class="item_icon  icon-order"></div>
+							<div class="item_name">Выставить счет</div>
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div> -->
+
+	<div class="header_menu">
+		<ul>
+			<li class="active"><a>Задачи</a></li>
+			<li><a>Управление</a></li>
+			<li><a>Поиск компании</a></li>
+		</ul>
+	</div>
+
+
+	<div class="header_task_actions">
+		<!-- ЗАВЕРШИТЬ ЗАДАЧУ -->
+		<div class="header_task_actions_left">
+			<a class="button small header_task_close drop-target" data-position="bottom center" data-theme="drop_task_actions">Закрыть задачу</a>
+
+			<div class="drop-content">
+				<div class="drop-content-inner">
+					<div class="center_xy mb24">
+						<i class="icon icon_thumb_up"></i>
+						<div class="mt16 fw_m">Задача решена!</div>
+					</div>
+
+					<div class="drop_task_buttons">
+						<div class="button small">Взять следующую (5)</div>
+						<div class="button small grey">Завершить работу</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ТАЙМЕР ЗАДАЧИ -->
+		<div class="header_task_timer">05:15</div>
+
+		<!-- СЛЕДУЮЩАЯ ЗАДАЧА -->
+		<!-- <div class="button small header_task_next">Следующая</div> -->
+
+
+		<!-- ОТЛОЖИТЬ ЗАДАЧУ ---------------------------------------->
+		<div class="header_task_actions_right">
+			<!-- <a class="button small header_task_pause drop-target" data-position="bottom center" data-theme="drop_task_actions">Отложить задачу</a> -->
+
+			<!-- ОТЛОЖИТЬ РАБОТУ НАД ЗАДАЧЕЙ? -->
+			<!-- <div class="drop-content">
+				<div class="drop-content-inner">
+					<div class="center_xy mb16">
+						<i class="icon icon_pause"></i>
+						<div class="mt16 fw_m">Отложить работу над задачей?</div>
+					</div>
+
+					<textarea class="js_autosize textarea_middle w100" placeholder="Укажите по какой причине выполнение задачи откладывается"></textarea>
+
+					<div class="drop_task_buttons">
+						<div class="button small">Отложить</div>
+						<div class="button small grey">Вернуть в работу</div>
+					</div>
+				</div>
+			</div> -->
+		</div>
+
+		<!-- ЗАДАЧА ОТЛОЖЕНА -->
+		<!-- <div class="drop-content">
+			<div class="drop-content-inner">
+				<div class="center_xy mb24">
+					<i class="icon icon_pause"></i>
+					<div class="mt16 fw_m">Задача отложена!!</div>
+				</div>
+
+				<div class="drop_task_buttons">
+					<div class="button small">Взять следующую (5)</div>
+					<div class="button small grey">Завершить работу</div>
+				</div>
+			</div>
+		</div> -->
+		<!-- ОТЛОЖИТЬ ЗАДАЧУ ---------------------------------------->
+
+
+		<!-- ВЗЯТЬ ЗАДАЧУ -->
+		<!-- <div class="button small header_task_start">Начать работу</div> -->
+
+		<!-- ПЕРЕДАТЬ ЗАДАЧУ -->
+		<div class="header_task_actions_right">
+			<a class="button small header_task_pause drop-target" data-position="bottom center" data-theme="drop_task_actions"><i class="icon-redirect mr8"></i>Передать</a>
+
+			<!-- ОТЛОЖИТЬ РАБОТУ НАД ЗАДАЧЕЙ? -->
+			<div class="drop-content">
+				<div class="drop-content-inner">
+					<div class="fw_m a_center mb16">Перенаправить задачу?</div>
+
+					<div class="form_group">
+						<div class="jsRadSelect2 drop_item_wrap w100 small" data-rd-search="false" data-rd-placeholder="Выберите группу исполнителя" data-rd-is-multy-select="false" data-filter="false">
+							<span class="jsRadSelect2Options">Алия Арсланова</span>
+							<span class="jsRadSelect2Options">Андрей Вариков</span>
+						</div>
+					</div>
+
+					<div class="form_group">
+						<textarea class="js_autosize textarea_middle w100" placeholder="Комментарий для нового исполнителя"></textarea>
+					</div>
+
+					<div class="drop_task_buttons">
+						<div class="button small">Передать</div>
+						<div class="button small grey">Отмена</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="header_profile">
+
+		<!-- Имя -->
+		<div class="header_profile_name">
+			<a href="#" class="drop-target icon-menu-clients" data-theme="drop_header_pos">Смирнова Елена</a>
+			<div class="drop-content">
+				<div class="drop-content-inner">
+					<ul class="drop-menu f_small">
+						<li><a class="icon-check">Дмитриевская точка</a></li>
+						<li><a>Ленинский проспект</a></li>
+						<li><a>Бульвар Славы</a></li>
+						<li><a>Бульвар Славы (Веранда)</a></li>
+						<li><a>Бульвар Славы (Авто)</a></li>
+						<li><a class="icon-settings">Все точки продаж</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- кнопка настроек -->
+		<div class="header_profile_settigs">
+			<a href="#" class="icon-settings"></a>
+		</div>
+
+		<!-- кнопка выйти -->
+		<div class="header_profile_logout">
+			<a href="#" class="icon-logout"></a>
+		</div>
+	</div>
+</header>
+
+<!-- кнопка открытия чата -->
+<!-- <div class="button_chat">
+	<label>4</label>
+	<a href="#"></a>
+</div> -->
+
+
+
+	<section class="main">
+
+		<!-- All tabs are separeted from this file to Markup.Buhgalteria\markup\html\management -->
+
+
+		<!-- Employees tab -->
+		<!-- <include data-file="management/employees.html"></include> -->
+		<!-- <%= require('html-loader!./management/employees.html') %> -->
+		<div class="tabs tabs_vertical">
+
+	<!-- Left menu -->
+	<div class="tabs_menu">
+		<ul>
+			<li class="active"><a href="#">Сотрудники</a></li>
+			<li class="disabled"><a href="#">Тарифы</a></li>
+			<li class="disabled"><a href="#">Плановые задачи</a></li>
+		</ul>
+	</div>
+
+	<!-- Buhgalteria employees content -->
+	<div class="tabs_content tab_content__employees">
+		<div class="employees__content">
+			<div class="employees__header">
+				<h1>Сотрудники</h1>
+
+				<button type="button" name="button" class="employees__invite button small icon-plus">Пригласить</button>
+
+				<flex>
+					<div class="employees__groups">
+						<div class="jsRadSelect2 drop_item_wrap" data-rd-search="false" data-rd-placeholder="Все группы" data-rd-is-multy-select="false" data-filter="true">
+							<span class="jsRadSelect2Options">Клиентский менеджер</span>
+							<span class="jsRadSelect2Options">Администратор</span>
+							<span class="jsRadSelect2Options">Выписник</span>
+							<span class="jsRadSelect2Options">Главбух</span>
+							<span class="jsRadSelect2Options">Главбух ЗП</span>
+							<span class="jsRadSelect2Options">Первая линия</span>
+							<span class="jsRadSelect2Options">Первичник</span>
+							<span class="jsRadSelect2Options">Техподдержка</span>
+						</div>
+					</div>
+
+					<div class="employees__chief_only">
+						<input type="checkbox" name="chief_only" id="chief_only" checked>
+						<label for="chief_only" class="label_check switcher">
+							<i class="icon"></i>
+							<span>Только руководители</span>
+						</label>
+					</div>
+				</flex>
+
+			</div>
+
+
+			<table class="table__employees">
+
+				<thead>
+					<tr>
+						<th class="employee">Сотрудник</th>
+						<th class="group">Группа</th>
+						<th class="briefcase">Портфели</th>
+						<th class="chief">Руководитель</th>
+						<th class="remove"></th>
+					</tr>
+				</thead>
+
+				<tbody>
+
+					<tr class="employees__search">
+						<td colspan="5">
+							<div class="input_group">
+								<input type="search" class="input_search small" placeholder="Поиск сотрудника">
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="employee">
+							<div class="icon-menu-clients">
+								<span class="employee__name">Александра Иванова</span>
+								<span class="employee__email">a.ivanova@company.ru</span>
+							</div>
+						</td>
+
+						<td class="group">
+							<div class="jsRadSelect2 drop_item_wrap" data-rd-search="false" data-rd-placeholder="Все группы" data-rd-is-multy-select="false" data-filter="true">
+								<span class="jsRadSelect2Options">Клиентский менеджер</span>
+								<span class="jsRadSelect2Options">Администратор</span>
+								<span class="jsRadSelect2Options">Выписник</span>
+								<span class="jsRadSelect2Options">Главбух</span>
+								<span class="jsRadSelect2Options">Главбух ЗП</span>
+								<span class="jsRadSelect2Options">Первая линия</span>
+								<span class="jsRadSelect2Options">Первичник</span>
+								<span class="jsRadSelect2Options">Техподдержка</span>
+							</div>
+						</td>
+
+						<td class="briefcase">
+							<div class="d_ib">
+								<div class="jsRadSelect2 select_inline drop_account_list" data-rd-search="false" data-rd-placeholder="1 портфель">
+									<span class="jsRadSelect2Options">
+										<span class="account_value">203 597,25 <span class="cur ruble"><span>р.</span></span>
+									</span>
+									<span class="account_name">Расчетный счет</span>
+									<span class="account_num">40101234560000000000</span>
+								</span>
+								<span class="jsRadSelect2Options">
+									<span class="account_value">23 000,00 <span class="cur dollar"><span>$</span></span>
+								</span>
+								<span class="account_name">Расчетный счет липовый</span>
+								<span class="account_num">40101234560000000000</span>
+							</span>
+							<span class="jsRadSelect2SelectedItem">
+								1 портфель
+								<span class="light_text">(*****4590)</span> –
+								<span class="fw_m">203 597,25 <span class="cur ruble"><span>р.</span></span>
+							</span>
+						</span>
+					</div>
+				</div>
+			</td>
+
+			<td class="chief">
+				<input type="checkbox" name="chief" id="chief1">
+				<label for="chief1" class="label_check"><i class="icon"></i></label>
+			</td>
+
+			<td class="remove">
+				<button type="button" name="" class="icon-trash-bin"></button>
+			</td>
+		</tr>
+
+		<tr>
+			<td class="employee">
+				<div class="icon-menu-clients">
+					<span class="employee__name">Дмитрий Иванов</span>
+					<span class="employee__email">d.ivanov@company.ru</span>
+				</div>
+			</td>
+
+			<td class="group">
+				<div class="jsRadSelect2 drop_item_wrap" data-rd-search="false" data-rd-placeholder="Все группы" data-rd-is-multy-select="false" data-filter="true">
+					<span class="jsRadSelect2Options">Клиентский менеджер</span>
+					<span class="jsRadSelect2Options">Администратор</span>
+					<span class="jsRadSelect2Options">Выписник</span>
+					<span class="jsRadSelect2Options">Главбух</span>
+					<span class="jsRadSelect2Options">Главбух ЗП</span>
+					<span class="jsRadSelect2Options">Первая линия</span>
+					<span class="jsRadSelect2Options">Первичник</span>
+					<span class="jsRadSelect2Options">Техподдержка</span>
+				</div>
+			</td>
+
+			<td class="briefcase">
+				<div class="d_ib">
+					<div class="jsRadSelect2 select_inline drop_account_list" data-rd-search="false" data-rd-placeholder="3 портфеля">
+						<span class="jsRadSelect2Options">
+							<span class="account_value">203 597,25 <span class="cur ruble"><span>р.</span></span>
+						</span>
+						<span class="account_name">Расчетный счет</span>
+						<span class="account_num">40101234560000000000</span>
+					</span>
+					<span class="jsRadSelect2Options">
+						<span class="account_value">23 000,00 <span class="cur dollar"><span>$</span></span>
+					</span>
+					<span class="account_name">Расчетный счет липовый</span>
+					<span class="account_num">40101234560000000000</span>
+				</span>
+				<span class="jsRadSelect2SelectedItem">
+					3 портфеля
+					<span class="light_text">(*****4590)</span> –
+					<span class="fw_m">203 597,25 <span class="cur ruble"><span>р.</span></span>
+				</span>
+			</span>
+		</div>
+	</div>
+</td>
+
+<td class="chief">
+	<input type="checkbox" name="chief" id="chief2">
+	<label for="chief2" class="label_check"><i class="icon"></i></label>
+</td>
+
+<td class="remove">
+	<button type="button" name="" class="icon-trash-bin"></button>
+</td>
+</tr>
+
+<tr>
+	<td class="employee">
+		<div class="icon-menu-clients">
+			<span class="employee__name">Дмитрий Николаев</span>
+			<span class="employee__email">d.nikolaev@company.ru</span>
+		</div>
+	</td>
+
+	<td class="group">
+		<div class="jsRadSelect2 drop_item_wrap" data-rd-search="false" data-rd-placeholder="Все группы" data-rd-is-multy-select="false" data-filter="true">
+			<span class="jsRadSelect2Options">Клиентский менеджер</span>
+			<span class="jsRadSelect2Options">Администратор</span>
+			<span class="jsRadSelect2Options">Выписник</span>
+			<span class="jsRadSelect2Options">Главбух</span>
+			<span class="jsRadSelect2Options">Главбух ЗП</span>
+			<span class="jsRadSelect2Options">Первая линия</span>
+			<span class="jsRadSelect2Options">Первичник</span>
+			<span class="jsRadSelect2Options">Техподдержка</span>
+		</div>
+	</td>
+
+	<td class="briefcase">
+		<div class="d_ib">
+			<div class="jsRadSelect2 select_inline drop_account_list" data-rd-search="false" data-rd-placeholder="6 портфелей">
+				<span class="jsRadSelect2Options">
+					<span class="account_value">203 597,25 <span class="cur ruble"><span>р.</span></span>
+				</span>
+				<span class="account_name">Расчетный счет</span>
+				<span class="account_num">40101234560000000000</span>
+			</span>
+			<span class="jsRadSelect2Options">
+				<span class="account_value">23 000,00 <span class="cur dollar"><span>$</span></span>
+			</span>
+			<span class="account_name">Расчетный счет липовый</span>
+			<span class="account_num">40101234560000000000</span>
+		</span>
+		<span class="jsRadSelect2SelectedItem">
+			6 портфелей
+			<span class="light_text">(*****4590)</span> –
+			<span class="fw_m">203 597,25 <span class="cur ruble"><span>р.</span></span>
+		</span>
+	</span>
+</div>
+</div>
+</td>
+
+<td class="chief">
+	<input type="checkbox" name="chief" id="chief3" checked>
+	<label for="chief3" class="label_check"><i class="icon"></i></label>
+</td>
+
+<td class="remove">
+	<button type="button" name="" class="icon-trash-bin"></button>
+</td>
+</tr>
+
+<tr>
+	<td class="employee">
+		<div class="icon-menu-clients">
+			<span class="employee__name">Дмитрий Петров</span>
+			<span class="employee__email">d.petrov@company.ru</span>
+		</div>
+	</td>
+
+	<td class="group">
+		<div class="jsRadSelect2 drop_item_wrap" data-rd-search="false" data-rd-placeholder="Все группы" data-rd-is-multy-select="false" data-filter="true">
+			<span class="jsRadSelect2Options">Клиентский менеджер</span>
+			<span class="jsRadSelect2Options">Администратор</span>
+			<span class="jsRadSelect2Options">Выписник</span>
+			<span class="jsRadSelect2Options">Главбух</span>
+			<span class="jsRadSelect2Options">Главбух ЗП</span>
+			<span class="jsRadSelect2Options">Первая линия</span>
+			<span class="jsRadSelect2Options">Первичник</span>
+			<span class="jsRadSelect2Options">Техподдержка</span>
+		</div>
+	</td>
+
+	<td class="briefcase">
+		<div class="d_ib">
+			<div class="jsRadSelect2 select_inline drop_account_list" data-rd-search="false" data-rd-placeholder="1 портфель">
+				<span class="jsRadSelect2Options">
+					<span class="account_value">203 597,25 <span class="cur ruble"><span>р.</span></span>
+				</span>
+				<span class="account_name">Расчетный счет</span>
+				<span class="account_num">40101234560000000000</span>
+			</span>
+			<span class="jsRadSelect2Options">
+				<span class="account_value">23 000,00 <span class="cur dollar"><span>$</span></span>
+			</span>
+			<span class="account_name">Расчетный счет липовый</span>
+			<span class="account_num">40101234560000000000</span>
+		</span>
+		<span class="jsRadSelect2SelectedItem">
+			1 портфель
+			<span class="light_text">(*****4590)</span> –
+			<span class="fw_m">203 597,25 <span class="cur ruble"><span>р.</span></span>
+		</span>
+	</span>
+</div>
+</div>
+</td>
+
+<td class="chief">
+	<input type="checkbox" name="chief" id="chief4">
+	<label for="chief4" class="label_check"><i class="icon"></i></label>
+</td>
+
+<td class="remove">
+	<button type="button" name="" class="icon-trash-bin"></button>
+</td>
+</tr>
+
+<tr>
+	<td class="employee">
+		<div class="icon-menu-clients">
+			<span class="employee__name">Ирина Поликарпова</span>
+			<span class="employee__email">i.polikarpova@company.ru</span>
+		</div>
+	</td>
+
+	<td class="group">
+		<div class="jsRadSelect2 drop_item_wrap" data-rd-search="false" data-rd-placeholder="Все группы" data-rd-is-multy-select="false" data-filter="true">
+			<span class="jsRadSelect2Options">Клиентский менеджер</span>
+			<span class="jsRadSelect2Options">Администратор</span>
+			<span class="jsRadSelect2Options">Выписник</span>
+			<span class="jsRadSelect2Options">Главбух</span>
+			<span class="jsRadSelect2Options">Главбух ЗП</span>
+			<span class="jsRadSelect2Options">Первая линия</span>
+			<span class="jsRadSelect2Options">Первичник</span>
+			<span class="jsRadSelect2Options">Техподдержка</span>
+		</div>
+
+	</td>
+
+	<td class="briefcase">
+		<div class="d_ib">
+			<div class="jsRadSelect2 select_inline drop_account_list" data-rd-search="false" data-rd-placeholder="1 портфель">
+				<span class="jsRadSelect2Options">
+					<span class="account_value">203 597,25 <span class="cur ruble"><span>р.</span></span>
+				</span>
+				<span class="account_name">Расчетный счет</span>
+				<span class="account_num">40101234560000000000</span>
+			</span>
+			<span class="jsRadSelect2Options">
+				<span class="account_value">23 000,00 <span class="cur dollar"><span>$</span></span>
+			</span>
+			<span class="account_name">Расчетный счет липовый</span>
+			<span class="account_num">40101234560000000000</span>
+		</span>
+		<span class="jsRadSelect2SelectedItem">
+			1 портфель
+			<span class="light_text">(*****4590)</span> –
+			<span class="fw_m">203 597,25 <span class="cur ruble"><span>р.</span></span>
+		</span>
+	</span>
+</div>
+</div>
+</td>
+
+<td class="chief">
+	<input type="checkbox" name="chief" id="chief5">
+	<label for="chief5" class="label_check"><i class="icon"></i></label>
+</td>
+
+<td class="remove">
+	<button type="button" name="" class="icon-trash-bin"></button>
+</td>
+</tr>
+
+<tr>
+	<td class="employee">
+		<div class="icon-menu-clients">
+			<span class="employee__name">Николай Николаев</span>
+			<span class="employee__email">d.nikolaev@company.ru</span>
+		</div>
+	</td>
+
+	<td class="group">
+		<span>Приглашение отправлено</span>
+		<a href="#">Отправить еще раз</a>
+	</td>
+
+	<td class="briefcase">
+		<div class="d_ib">
+			<div class="jsRadSelect2 select_inline drop_account_list" data-rd-search="false" data-rd-placeholder="1 портфель">
+				<span class="jsRadSelect2Options">
+					<span class="account_value">203 597,25 <span class="cur ruble"><span>р.</span></span>
+				</span>
+				<span class="account_name">Расчетный счет</span>
+				<span class="account_num">40101234560000000000</span>
+			</span>
+			<span class="jsRadSelect2Options">
+				<span class="account_value">23 000,00 <span class="cur dollar"><span>$</span></span>
+			</span>
+			<span class="account_name">Расчетный счет липовый</span>
+			<span class="account_num">40101234560000000000</span>
+		</span>
+		<span class="jsRadSelect2SelectedItem">
+			1 портфель
+			<span class="light_text">(*****4590)</span> –
+			<span class="fw_m">203 597,25 <span class="cur ruble"><span>р.</span></span>
+		</span>
+	</span>
+</div>
+</div>
+</td>
+
+<td class="chief">
+	<input type="checkbox" name="chief" id="chief6">
+	<label for="chief6" class="label_check"><i class="icon"></i></label>
+</td>
+
+<td class="remove">
+	<button type="button" name="" class="icon-trash-bin"></button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+		<!-- Rates tab -->
+		<!--<include data-file="management/rates.html"></include>-->
+
+
+		<!-- Planned tasks tab -->
+		<!--<include data-file="management/tasks_planned.html"></include>-->
+
+	</section>
+
+</body>
+</html>

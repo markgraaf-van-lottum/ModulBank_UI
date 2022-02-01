@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Подписки (Платежи)</title>
+	<link rel="stylesheet" href="css/style_kassa.css">
+	<link rel="stylesheet" href="css/other-screens-link.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/init.js"></script>
+</head> 
+<body>
+	<!-- prev/next screen -->
+	<a class="other-screens-link prev" href="settings__billing__bills.html"></a>
+	<a class="other-screens-link next" href="statistica__dashboard.html"></a>
+	
+	<!-- <include data-file="kassa_header.html"></include> -->
+
+<header>
+	<div class="header_logo">
+		<a href="#">Модульбанк</a>
+	</div>
+
+	<div class="header_menu free_items">
+		<div class="header_menu_inner">
+			<ul>
+				<li><a><span>Статистика</span></a></li>
+				<li><a><span>Контрагенты</span></a></li>
+				<li><a><span>Скидки</span></a></li>
+				<li><a><span>Документы</span></a></li>
+				<li><a><span>Товары</span></a></li>
+				<li><a><span>Горячие клавиши</span></a></li>
+				<!-- <li class="active"><a><span>Горячие клавиши</span></a></li> -->
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="header_profile">
+
+		<!-- кнопка выйти -->
+		<div class="header_profile_logout">
+			<a href="#" class="icon-logout"></a>
+		</div>
+
+		<!-- кнопка настроек -->
+		<div class="header_profile_settigs">
+			<a href="#" class="icon-settings"></a>
+		</div>
+
+		<!-- название компании -->
+		<div class="header_profile_name">
+			<a href="#" class="icon-pos drop-target" data-theme="drop_header_pos">Имя ТП</a>
+			<div class="drop-content">
+				<div class="drop-content-inner">
+					<ul class="drop-menu f_small">
+						<li><a class="icon-check">Дмитриевская точка</a></li>
+						<li><a>Ленинский проспект</a></li>
+						<li><a>Ленинский проспект 2</a></li>
+						<li><a>Ленинский проспект 3</a></li>
+						<li><a>Бульвар Славы</a></li>
+						<li><a>Бульвар Славы (Веранда)</a></li>
+						<li><a>Бульвар Славы (Авто)</a></li>
+						<li><a class="icon-settings">Все точки продаж</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</header>
+
+<!-- Кнопка "Вверх" -->
+<!-- <a class="button_up"></a> -->
+
+<!-- кнопка открытия чата -->
+<!-- <div class="button_chat">
+	<label>7</label>
+	<a href="#"></a>
+</div> -->
+
+	<article class="page  open">
+
+		<!-- шапка слоя -->
+		<div class="page_header">
+			<a class="page_close icon-close"></a>
+			<a class="page_expand icon-fullsize"></a>
+			<h1>Тариф № 3</h1>
+		</div>
+
+		<!-- контент слоя  -->
+		<div class="page_content  my_request">
+
+			<div class="notice_block_colored">По результатам проверки,  мы готовы предложить только тариф №3 с покупкой любой кассы. Тариф № 3 — это 100% предоплата за покупку оборудования. В стоимость тарифа входит заключение и пролонгация договора с ОФД, сервисное обслуживание и плановая замена фискального накопителя через 13 месяцев. Количество и модели касс касс не ограничены — выбирайте любую.</div>
+			
+			<!-- Мобильная касса -->
+			<div class="buy_kassa_amount  mobile">
+				<h3>Мобильная касса</h3>
+				<ul class="point">
+					<li>Объединяет планшет, сканер штрихкодов,<br> принтер чеков и&nbsp;умещается в&nbsp;одной руке</li>
+					<li>24&nbsp;часа бесперерывной работы</li>
+					<li>Подключается к&nbsp;1С&nbsp;и&nbsp;МойСклад</li>
+					<li>Подходит для курьерских служб, кафе, розничных и&nbsp;интернет-магазинов, подрядных организаций и&nbsp;др.</li>
+				</ul>
+
+				<div class="counter_container">
+					<div class="counter">
+						<input type="text" placeholder="0" value="1">
+						<a class="count_ctrl">&minus;</a>
+						<a class="count_ctrl">+</a>
+					</div>
+					
+					<div class="counter_subtext">Договор с ОФД включен</div>
+				</div>
+
+				<div class="kassa_img">
+					<div class="inner">
+						<div class="img"></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Стационарная касса -->
+			<div class="buy_kassa_amount  stationary">
+				<h3>Стационарная касса</h3>
+				<ul class="point">
+					<li>В&nbsp;стоимость входит кассовый компьютер МультиПОС и&nbsp;принтер чеков ВИКИ Принт&nbsp;57</li>
+					<li>7&nbsp;портов для дополнительного оборудования</li>
+					<li>Поддерживает УТМ ЕГАИС и&nbsp;работает с&nbsp;1С, МойСклад</li>
+					<li>Подходит для кафе, магазинов, салонов красоты, аптек, СТО и&nbsp;др.</li>
+				</ul>
+
+				<div class="counter_container">
+					<div class="counter">
+						<input type="text" placeholder="0" value="0">
+						<a class="count_ctrl">&minus;</a>
+						<a class="count_ctrl">+</a>
+					</div>
+
+					<div class="counter_subtext">Договор с ОФД включен</div>
+				</div>
+
+				<div class="kassa_img">
+					<div class="inner">
+						<div class="img"></div>
+					</div>
+				</div>
+			</div>
+
+			<table class="kassa_types_conditions">
+				<tr>
+					<td>Первый взнос</td>
+					<td>33 500 ₽</td>
+				</tr>
+				<tr>
+					<td>Ежемесячный платеж в 1-ый год</td>
+					<td>0 ₽</td>
+				</tr>
+				<tr>
+					<td>Ежемесячный платеж во 2-ой год</td>
+					<td>1 250 ₽</td>
+				</tr>
+			</table>
+
+			<!-- Базовая касса -->
+			<div class="buy_kassa_amount  basic">
+				<h3>Базовая касса</h3>
+				<ul class="point">
+					<li>Фискальный накопитель встроен в&nbsp;корпус<br> принтера</li>
+					<li>Подключается к&nbsp;компьютеру, ноутбуку<br> или кассовому компьютеру МультиПОС</li>
+					<li>Отправляет электронные чеки на&nbsp;почту или смс</li>
+					<li>Подходит для розничных и&nbsp;интернет-магазинов, салонов красоты, аптек, пункта выдачи заказов и&nbsp;др.</li>
+				</ul>
+
+				<div class="counter_container">
+					<div class="counter">
+						<input type="text" placeholder="0" value="77">
+						<a class="count_ctrl">&minus;</a>
+						<a class="count_ctrl">+</a>
+					</div>
+				</div>
+
+				<div class="kassa_img">
+					<div class="inner">
+						<div class="img"></div>
+					</div>
+				</div>
+			</div>
+
+			<table class="kassa_types_conditions">
+				<tr>
+					<td>Первый взнос</td>
+					<td>18 000 ₽</td>
+				</tr>
+				<tr>
+					<td>Ежемесячный платеж в 1-ый год</td>
+					<td>0 ₽</td>
+				</tr>
+				<tr>
+					<td>Ежемесячный платеж во 2-ой год</td>
+					<td>1 000 ₽</td>
+				</tr>
+			</table>
+
+			<!-- Общая стоимость -->
+			<div class="total_cost">
+				<div>77 700 ₽</div>
+				<a class="button  middle  wide">Купить</a>
+				<a class="button  middle  clean">Удалить заявку</a>
+			</div>
+
+		</div>
+
+	</article>
+
+<!-- Все Ок -->
+<div class="notification  success  w360">
+	<div class="text">Оплата по карте подключена</div>
+</div>
+
+</body>
+</html>

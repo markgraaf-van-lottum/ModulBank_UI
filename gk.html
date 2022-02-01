@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>ГК</title>
+	<link rel="stylesheet" href="css/style_kassa.css">
+	<link rel="stylesheet" href="css/other-screens-link.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/init.js"></script>
+</head>
+<body>
+
+	<!-- prev/next screen -->
+	<a class="other-screens-link prev" href="ECP__anketa__step-4.html"></a>
+	<a class="other-screens-link next" href="GK__add.html"></a>
+
+	<!-- <include data-file="kassa_header.html"></include> -->
+
+<header>
+	<div class="header_logo">
+		<a href="#">Модульбанк</a>
+	</div>
+
+	<div class="header_menu free_items">
+		<div class="header_menu_inner">
+			<ul>
+				<li><a><span>Статистика</span></a></li>
+				<li><a><span>Контрагенты</span></a></li>
+				<li><a><span>Скидки</span></a></li>
+				<li><a><span>Документы</span></a></li>
+				<li><a><span>Товары</span></a></li>
+				<li class="active"><a><span>Горячие клавиши</span></a></li>
+				<!-- <li class="active"><a><span>Горячие клавиши</span></a></li> -->
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="header_profile">
+
+		<!-- кнопка выйти -->
+		<div class="header_profile_logout">
+			<a href="#" class="icon-logout"></a>
+		</div>
+
+		<!-- кнопка настроек -->
+		<div class="header_profile_settigs">
+			<a href="#" class="icon-settings"></a>
+		</div>
+
+		<!-- название компании -->
+		<div class="header_profile_name">
+			<a href="#" class="icon-pos drop-target" data-theme="drop_header_pos">Имя ТочкиПродаж</a>
+			<div class="drop-content">
+				<div class="drop-content-inner">
+					<ul class="drop-menu f_small">
+						<li><a class="icon-check">Дмитриевская точка</a></li>
+						<li><a>Ленинский проспект</a></li>
+						<li><a>Ленинский проспект 2</a></li>
+						<li><a>Ленинский проспект 3</a></li>
+						<li><a>Бульвар Славы</a></li>
+						<li><a>Бульвар Славы (Веранда)</a></li>
+						<li><a>Бульвар Славы (Авто)</a></li>
+						<li><a class="icon-settings">Все точки продаж</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</header>
+
+<!-- Кнопка "Вверх" -->
+<!-- <a class="button_up"></a> -->
+
+<!-- кнопка открытия чата -->
+<!-- <div class="button_chat">
+	<label>7</label>
+	<a href="#"></a>
+</div> -->
+
+	<section class="main">
+
+		<div class="section_content  section_content__gk">
+			<div class="title_panel">
+				<h1>Вид кассы</h1>
+			</div>
+
+			<div class="gk_panel">
+				<div class="tabs_flat  tabs_flat__stretch">
+				     <a class="tab  tab__active">Товары</a>
+				     <a class="tab">Услуги Вкладка</a>
+				     <a class="tab">Вкладка 3</a>
+				     <a class="tab">Вкладка 4</a>
+				     <a class="tab">Длинное название вкладки</a>
+				     <a class="tab">Вкладка 6</a>
+				     <a class="tab">Вкладка  Вкладка 7</a>
+				     <a class="tab">Вкладка 8</a>
+				     <a class="tab">Вкладка 9</a>
+				     <a class="tab  tab__add">+ Добавить вкладку</a>
+				</div>
+
+				<div class="gk_panel_controls">
+					<div class="control">
+						Название вкладки:
+						<input type="text" class="small  tab_name" value="Товары">
+					</div>
+
+					<div class="control">
+						Порядок:
+						<div class="counter  small">
+							<a class="count_ctrl">&minus;</a>
+							<input type="text" placeholder="0" value="1">
+							<a class="count_ctrl">+</a>
+						</div>
+					</div>
+
+					<div class="control">
+						<input type="checkbox" name="c5" id="33">
+						<label for="33" class="label_check  switcher"><i class="icon"></i><span>Показывать статистику</span></label>
+					</div>
+
+					<div class="control">
+						<a class="button  clean  small">Удалить вкладку</a>
+					</div>
+				</div>
+
+				<!-- Добавляем класс cell_selected когда выбрана ячейка -->
+				<div class="gk_panel_buttons">
+					<!-- Пустые ячейки -->
+					<div class="row1  col1"><div class="cell  paste_to"></div></div>
+					<div class="row1  col2"><div class="cell"></div></div>
+					<div class="row1  col3"><div class="cell"></div></div>
+					<div class="row1  col4"><div class="cell"></div></div>
+					<div class="row1  col5"><div class="cell"></div></div>
+					<div class="row1  col6"><div class="cell"></div></div>
+					<div class="row1  col7"><div class="cell"></div></div>
+					<div class="row1  col8"><div class="cell"></div></div>
+					<div class="row1  col9"><div class="cell"></div></div>
+					<div class="row1  col10"><div class="cell"></div></div>
+					<div class="row2  col1"><div class="cell"></div></div>
+					<div class="row2  col2"><div class="cell"></div></div>
+					<div class="row2  col3"><div class="cell"></div></div>
+					<div class="row2  col4"><div class="cell"></div></div>
+					<div class="row2  col5"><div class="cell"></div></div>
+					<div class="row2  col6"><div class="cell"></div></div>
+					<div class="row2  col7"><div class="cell"></div></div>
+					<div class="row2  col8"><div class="cell"></div></div>
+					<div class="row2  col9"><div class="cell"></div></div>
+					<div class="row2  col10"><div class="cell"></div></div>
+					<div class="row3  col1"><div class="cell"></div></div>
+					<div class="row3  col2"><div class="cell"></div></div>
+					<div class="row3  col3"><div class="cell"></div></div>
+					<div class="row3  col4"><div class="cell"></div></div>
+					<div class="row3  col5"><div class="cell"></div></div>
+					<div class="row3  col6"><div class="cell"></div></div>
+					<div class="row3  col7"><div class="cell"></div></div>
+					<div class="row3  col8"><div class="cell"></div></div>
+					<div class="row3  col9"><div class="cell  paste_to"></div></div>
+					<div class="row3  col10"><div class="cell"></div></div>
+
+
+					<!-- Заполненные ячейки -->
+					<div class="row2  col5  cell_w1  cell_h1">
+						<div class="cell" style="background: plum;">
+							<span class="cell_move icon-move"></span>
+							<span class="text">Очень_длинное_слово в очень длинном наименовании товара (Масло Сливочное)  наименовании товара (Масло Сливочное)</span>
+						</div>
+					</div>
+
+					<div class="row1  col1  cell_w3  cell_h1">
+						<div class="cell" style="background: plum;">
+							<span class="cell_move icon-move"></span>
+							<span class="text">Бананы</span>
+						</div>
+					</div>
+
+					<div class="row1  col8  cell_w2  cell_h3">
+						<div class="cell" style="background: #D98519;">
+							<span class="cell_move icon-move"></span>
+							<span class="text">Очень_длинное_слово в очень длинном наименовании товара (Масло Сливочное) наименовании товара (Масло Сливочное) (Масло Сливочное) наименовании товара (Масло Сливочное) Очень_длинное_слово в очень длинном наименовании товара (Масло Сливочное) наименовании товара (Масло Сливочное) (Масло Сливочное) наименовании товара (Масло Сливочное) Очень_длинное_слово в очень длинном наименовании товара (Масло Сливочное) наименовании товара (Масло Сливочное) (Масло Сливочное) наименовании товара (Масло Сливочное)</span>
+						</div>
+					</div>
+
+					<!-- добавляем класс selected когда выбрана ячейка -->
+					<div class="row1  col4  cell_w4  cell_h1 ">
+						<div class="cell" style="background: #B82C2C;">
+							<span class="cell_move icon-move"></span>
+							<span class="text">Яблоки</span>
+						</div>
+					</div>
+
+					<!-- Для категории - класс category и вкладываем ссылку с классом category_open -->
+					<div class="row2  col6  cell_w2  cell_h2">
+						<div class="cell  category" style="background: #8AC540;">
+							<span class="cell_move icon-move"></span>
+							<span class="text">__Овощная Ореховая КатегорияОвощная Ореховая КатегорияОвощная Ореховая Категория __Овощная Ореховая КатегорияОвощная Ореховая КатегорияОвощная Ореховая Категория</span>
+							<a class="category_open">открыть</a>
+						</div>
+					</div>
+
+					<div class="row2  col10  cell_w1  cell_h1">
+						<div class="cell  category" style="background: #0078C3;">
+							<span class="cell_move icon-move"></span>
+							<span class="text">__Овощная Ореховая КатегорияОвощная Ореховая КатегорияОвощная Ореховая Категория</span>
+							<a class="category_open">открыть</a>
+						</div>
+					</div>
+
+					<div class="row3  col1  cell_w2  cell_h1">
+						<div class="cell" style="background: #D98519;">
+							<span class="cell_move icon-move"></span>
+							<span class="text">Очень_длинное_слово в очень длинном наименовании товара (Масло Сливочное) наименовании товара (Масло Сливочное) (Масло Сливочное) наименовании товара (Масло Сливочное)</span>
+						</div>
+					</div>
+
+					<div class="row2  col3  cell_w2  cell_h2">
+						<div class="cell" style="background: #8AC540;">
+							<span class="cell_move icon-move"></span>
+							<span class="text">Очень_длинное_слово в очень длинном наименовании товара (Масло Сливочное) наименовании товара (Масло Сливочное) (Масло Сливочное) наименовании товара (Масло Сливочное) Очень_длинное_слово в очень длинном наименовании товара (Масло Сливочное) наименовании товара (Масло Сливочное) (Масло Сливочное) наименовании товара (Масло Сливочное)</span>
+						</div>
+					</div>
+
+					<div class="row2  col1  cell_w1  cell_h1">
+						<div class="cell" style="background: #0078C3;">
+							<span class="cell_move icon-move"></span>
+							<span class="text">Творог жирность 20%</span>
+						</div>
+					</div>
+
+					<div class="row2  col2  cell_w1  cell_h1">
+						<div class="cell" style="background: #0078C3;">
+							<span class="cell_move icon-move"></span>
+							<span class="text">Масло Сливочное</span>
+						</div>
+					</div>
+
+					<div class="row3  col5  cell_w1  cell_h1">
+						<div class="cell" style="background: #0078C3;">
+							<span class="cell_move icon-move"></span>
+							<span class="text">Ячейка</span>
+						</div>
+					</div>
+
+					<div class="row3  col10  cell_w1  cell_h1">
+						<div class="cell  category" style="background: #0078C3;">
+							<span class="cell_move icon-move"></span>
+							<span class="text">Фрукты</span>
+							<a class="category_open">открыть</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="gk_panel_footer">
+					Выберите ячейку для добавления товара на экран кассы.<br>Для редактирования выберите ту же ячейку.
+				</div>
+			</div>
+
+	</section>
+</body>
+</html>

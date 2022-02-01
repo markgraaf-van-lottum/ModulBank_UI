@@ -1,0 +1,36 @@
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 500;
+}
+h1 {
+	margin: 0 0 24px;
+}
+h2 {
+	font-size: 20px;
+	margin: 0 0 24px;
+}
+h3 {
+	font-size: 18px;
+	line-height: 22px;
+	margin: 0 0 20px;
+}
+p {
+	margin: 0;
+}
+.block-title {
+	margin-bottom: 16px;
+	color: #777C87;
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+a.action-small {
+	display: inline-block;
+	margin-top: 12px;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #4971D0;
+}

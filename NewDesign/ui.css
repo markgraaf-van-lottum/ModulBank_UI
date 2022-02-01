@@ -1,0 +1,162 @@
+/*		Кнопки		*/
+
+a.button {
+	color: #FFF;
+	background: #4971D0;
+	margin-top: 32px;
+	font-weight: bold;
+	line-height: 16px;
+	display: inline-block;
+	text-align: center;
+	min-width: 200px;
+	padding: 1em 24px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	border-radius: 3px;
+	cursor: pointer;
+	user-select: none;
+	transition: background .2s;
+}
+a.button:hover {
+	background: #3461CB;
+}
+a.button:active {
+	background: #2A4EA2;
+}
+a.button.big {
+	padding-left: 32px;
+	padding-right: 32px;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.1em;
+	border-radius: 4px;
+}
+a.button.small {
+	font-size: 12px;
+	line-height: 14px;
+	margin-top: 24px;
+	letter-spacing: 0.05em;
+	border-radius: 2px;
+}
+a.button.tiny {
+	min-width: auto;
+	padding: 0 8px;
+	font-size: 9px;
+	line-height: 20px;
+	letter-spacing: 0.05em;
+	border-radius: 2px;
+}
+a.button.secondary {
+	background: #8769AE;
+}
+a.button.secondary:hover {
+	background: #7A59A6;
+}
+a.button.secondary:active {
+	background: #6E5095;
+}
+a.button.light {
+	color: #464C59;
+	background: rgba(34,39,51,.08);
+}
+a.button.light:hover {
+	background: rgba(34,39,51,.12);
+}
+a.button.light:active {
+	background: rgba(34,39,51,.18);
+}
+
+
+/*		Чекбокс		*/
+.checkbox {
+	margin-top: 16px;
+	user-select: none;
+}
+input[type="checkbox"] {
+	position: absolute;
+	visibility: hidden;
+}
+.checkbox label {
+	display: inline-block;
+	position: relative;
+	padding-left: 32px;
+	font-size: 16px;
+	cursor: pointer;
+}
+.checkbox label::before {
+	content: "\62";
+	font-family: "icons-font";
+	text-transform: none !important;
+	font-style: normal;
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	top: 1px;
+	left: 0;
+	border: 2px solid #C0C6C8;
+	border-radius: 2px;
+	color: #FFF;
+	font-size: 16px;
+	text-indent: -1px;
+	line-height: 16px;
+	background: #FFF;
+	transition: .2s;
+}
+input[type="checkbox"]:checked + label::before {
+	border-color: #88BD1F;
+	background: #88BD1F;
+}
+.checkbox .description {
+	color: #717D83;
+	margin: 6px 0 0 32px;
+	line-height: 20px;
+}
+
+/*		Вкладки	 */
+.tabs-block {
+	display: flex;
+	margin-bottom: 24px;
+}
+main .tabs-block:first-child {
+	margin-top: -10px;
+}
+.tabs-block .tab {
+	padding: 12px 0;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	cursor: pointer;
+	transition: color .2s;
+}
+.tabs-block .tab:not(:last-child) {
+	margin-right: 32px;
+}
+.tabs-block .tab.active {
+	color: #4971D0;
+}
+.tabs-block .tab:not(.active):hover {
+	color: rgba(73,113,208,.8);
+}
+.tabs-block .tab.active::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 4px;
+	background-color: #4971D0;
+}
+.tabs-block .tab.tag--new::after {
+	content: 'Новое';
+	position: absolute;
+	top: 16px;
+	right: -48px;
+	font-size: 9px;
+	line-height: 11px;
+	font-weight: 400;
+	color: #FFF;
+	padding: 2px 6px;
+	background: #F27922;
+	border-radius: 32px;
+	cursor: default;
+}

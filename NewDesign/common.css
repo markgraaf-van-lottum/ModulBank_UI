@@ -1,0 +1,56 @@
+body {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	min-width: 950px;
+	background: #F5F5F6;
+	font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #222733;
+	cursor: default;
+}
+div,
+article,
+aside,
+footer,
+header,
+nav,
+main,
+section {
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+::-webkit-scrollbar {
+	width: 16px;
+	height: 16px;
+	background: none;
+}
+::-webkit-scrollbar-thumb {
+	width: 16px;
+	background-color: rgba(0,0,0,.12);
+	-webkit-background-clip: padding;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+	box-shadow: inset 0 0 2px rgba(0,0,0,.16);
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(0,0,0,.16);
+}
+a {
+	text-decoration: none;
+	color: #015486;
+}
+header a,
+a.button {
+	color: inherit;
+	text-decoration: none !important;
+}
+*:not(header) a:hover {
+	text-decoration: underline;
+}
+

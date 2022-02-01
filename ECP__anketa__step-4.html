@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Получение ЭЦП (Шаг 4)</title>
+	<link rel="stylesheet" href="css/style_kassa.css">
+	<link rel="stylesheet" href="css/other-screens-link.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/init.js"></script>
+</head> 
+<body>
+	<!-- prev/next screen -->
+	<a class="other-screens-link prev" href="documents__cheki.html"></a>
+	<a class="other-screens-link next" href="gk.html"></a>
+	
+	<!-- <include data-file="kassa_header.html"></include> -->
+<header>
+	<div class="header_logo">
+		<a href="#">Модульбанк</a>
+	</div>
+
+	<div class="header_menu free_items">
+		<div class="header_menu_inner">
+			<ul>
+				<li><a><span>Статистика</span></a></li>
+				<li><a><span>Контрагенты</span></a></li>
+				<li><a><span>Скидки</span></a></li>
+				<li><a><span>Документы</span></a></li>
+				<li><a><span>Товары</span></a></li>
+				<li><a><span>Горячие клавиши</span></a></li>
+				<!-- <li class="active"><a><span>Горячие клавиши</span></a></li> -->
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="header_profile">
+
+		<!-- кнопка выйти -->
+		<div class="header_profile_logout">
+			<a href="#" class="icon-logout"></a>
+		</div>
+
+		<!-- кнопка настроек -->
+		<div class="header_profile_settigs">
+			<a href="#" class="icon-settings"></a>
+		</div>
+
+		<!-- название компании -->
+		<div class="header_profile_name">
+			<a href="#" class="icon-pos drop-target" data-theme="drop_header_pos">Имя ТП</a>
+			<div class="drop-content">
+				<div class="drop-content-inner">
+					<ul class="drop-menu f_small">
+						<li><a class="icon-check">Дмитриевская точка</a></li>
+						<li><a>Ленинский проспект</a></li>
+						<li><a>Ленинский проспект 2</a></li>
+						<li><a>Ленинский проспект 3</a></li>
+						<li><a>Бульвар Славы</a></li>
+						<li><a>Бульвар Славы (Веранда)</a></li>
+						<li><a>Бульвар Славы (Авто)</a></li>
+						<li><a class="icon-settings">Все точки продаж</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</header>
+
+	<!-- <include data-file="ECP/ECP__banner.html section.main"></include> -->
+	<section class="main">
+
+		<div class="section_content full_width">
+
+			<!-- Баннер "ЭЦП" -->
+			<div class="widget_block service_teaser service_teaser__ecp">
+				<a class="icon-close"></a>
+				<div>
+					<div class="service_teaser_title">Получите электронную подпись</div>
+					<div class="service_teaser_description">Заполните анкету, чтобы получить электронную подпись и зарегистрировать кассу в налоговой через личный кабинет.</div>
+				</div>
+				<a class="button middle second">Заполнить анкету</a>
+			</div>
+
+			<!-- Баннер "ЭЦП" (В процессе) -->
+			<div class="widget_block service_teaser service_teaser__ecp">
+				<!-- <a class="icon-close"></a> -->
+				<div>
+					<div class="service_teaser_title">Электронная подпись оформляется</div>
+					<div class="service_teaser_description">Если вы еще не передали документы на выпуск электронной подписи, то распечатайте и отправьте нам.</div>
+				</div>
+				<a class="button middle second">Отправить документы</a>
+			</div>
+			
+		</div>
+	</section>
+
+
+<!-- Кнопка "Вверх" -->
+<!-- <a class="button_up"></a> -->
+
+<!-- кнопка открытия чата -->
+<div class="button_chat">
+	<label>7</label>
+	<a href="#"></a>
+</div>
+
+
+
+	<article class="page  page_with_wizard  open">
+
+		<!-- шапка слоя -->
+		<div class="page_header">
+			<a class="page_close icon-close"></a>
+			<a class="page_expand icon-fullsize"></a>
+			<h1>Получение электронной подписи</h1>
+			<div class="page_wizard">
+				<div class="wizard_steps">
+					<div class="step  done">
+						<div class="name">Компания</div>
+					</div>
+					<div class="step  done">
+						<div class="name">Руководитель</div>
+					</div>
+					<div class="step  done">
+						<div class="name">Документы</div>
+					</div>
+					<div class="step  active">
+						<div class="name">Отправка заявления</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- контент слоя  -->
+		<div class="page_content  content_padding  page__ecp">
+			
+			<!--  -->
+			<div class="legend"><span>Печать заявления</span></div>
+			<p>Распечатайте заявление на выпуск электронной подписи, поставьте печать и подпишите.</p>
+			<div class="form_buttons  mt20">
+				<a class="button  small  light">Скачать</a>
+				<a class="button  small  light">На печать</a>
+			</div>
+
+			<!--  -->
+			<div class="legend  mt44"><span>Отправка документов</span></div>
+			<p>Отправьте нам скан или фото заявления и первой страницы паспорта.</p>
+
+			<!-- Загрузка док-ов -->
+			<div class="file_upload_list  mt20  mb16">
+
+				<div class="file_upload_block col five">
+					<div class="file_title">Первая страница<br> паспорта руководителя<br> в формате PNG, JPEG или PDF</div>
+					<div class="file_button">
+						<label class="button light icon-upload small button_file_upload">
+							Загрузить
+							<input type="file">
+						</label>
+					</div>
+				</div>
+				
+				<div class="file_upload_block col five">
+					<div class="file_title">Подписанное заявление<br> в формате PNG, JPEG или PDF</div>
+					<div class="file_button">
+						<label class="button light icon-upload small button_file_upload">
+							Загрузить
+							<input type="file">
+						</label>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div class="file_upload_list  mt20  mb16">
+				<!-- Лоадер -->
+				<div class="file_upload_block col five  loading_block">
+					<div class="file_title">Подписанное заявление<br> в формате PNG, JPEG или PDF</div>
+					<div class="file_button">
+						<label class="button light icon-upload small button_file_upload">
+							Загрузить
+							<input type="file">
+						</label>
+					</div>
+				</div>
+
+				<!-- Загружено -->
+				<div class="file_upload_block col five">
+					<div class="uploaded">
+						<a class="file_delete"></a>
+						<div class="file_center">
+							<div class="file_icon jpg"></div>
+							<div class="file_name">document.jpeg</div>
+							<div class="file_title">Подписанное заявление</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div class="file_upload_list  mt20  mb16">
+				<!-- Ошибка -->
+				<div class="file_upload_block col five error" b365-tooltip title="Размер файла не должен превышать 10MB">
+					<div class="file_title">Первая страница паспорта руководителя в формате PNG, JPEG или PDF</div>
+
+					<div class="file_button">
+						<label class="button light icon-upload small button_file_upload">
+							Загрузить
+							<input type="file">
+						</label>
+					</div>
+				</div>
+
+			</div>
+
+			<p>Если под рукой нет сканера, то отправьте фото документов любым способом:</p>
+			<ul class="point  mt12">
+				<li>WhatsApp, Telegram или Viber на номер +7 (999) 999-99-99</li>
+				<li>На электронный адрес <a href="mailto:foo@moo.com">foo@moo.com</a></li>
+			</ul>
+
+			<div class="form_buttons">
+				<a class="button middle">Готово</a>
+			</div>
+
+		</div>
+
+	</article>
+
+</body>
+</html>

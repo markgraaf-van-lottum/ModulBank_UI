@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>UI Kit - Таблицы (Касса)</title>
+	<link rel="stylesheet" href="css/style_kassa.css">
+	<link rel="stylesheet" href="css/kassa--tables.css">
+	<link rel="stylesheet" href="css/other-screens-link.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/init.js"></script>
+</head>
+<body>
+	<!-- prev/next screen -->
+	<a class="other-screens-link prev" href="statistica__dashboard.html"></a>
+	<a class="other-screens-link next" href="buhgalteria_employee_invite_registration.html"></a>
+
+<div class="section_content  full_width">
+	<!-- TABLE -->
+	<div class="legend  mb24"><span>Table</span></div>
+
+	<!-- КОНТРАГЕНТЫ -->
+	<table class="table contragents">
+		<caption>
+			10 контрагентов
+			<!-- Чекбокс - Только кассиры -->
+			<div class="cashier-only">
+				<input type="checkbox" id="cashiers">
+				<label for="cashiers" class="label_check  switcher">
+					<i class="icon"></i>
+					<span>Показывать только кассиров</span>
+				</label>
+			</div>
+		</caption>
+		<thead>
+			<tr>
+				<th>
+					<input type="checkbox" id="1">
+					<label for="1" class="label_check">
+						<i class="icon"></i>
+					</label>
+				</th>
+				<th>Наименование контрагента</th>
+				<th>Электронная почта</th>
+				<th>Статус</th>
+				<th>Роль</th>
+			</tr>
+		</thead>
+		<tr id="search">
+			<td colspan="5">
+				<!-- Строка поиска -->
+				<!-- <include data-file="tables/include/search-input.html"></include> -->
+				<input type="search" placeholder="Название, артикул или штрих-код товара">
+				<i class="icon-search"></i>
+				<!-- Допкласс visible -->
+				<i class="loader visible"></i>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="checkbox" id="2" checked>
+				<label for="2" class="label_check">
+					<i class="icon"></i>
+				</label>
+			</td>
+			<td>Федор Достоевский</td>
+			<td>mail@mail.ru</td>
+			<td>Активный</td>
+			<td>Поставщик, Поставщик услуг</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="checkbox" id="3">
+				<label for="3" class="label_check">
+					<i class="icon"></i>
+				</label>
+			</td>
+			<td>Лев Николаевич Толстой</td>
+			<td>leo@tolstoy.ru</td>
+			<td>Неактивный</td>
+			<td>Кассир, Сотрудник, Администратор</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="checkbox" id="4" checked>
+				<label for="4" class="label_check">
+					<i class="icon"></i>
+				</label>
+			</td>
+			<td>Михаил Булгаков</td>
+			<td>mail@mail.ru</td>
+			<td>Неактивный</td>
+			<td>Поставщик, Поставщик услуг</td>
+		</tr>
+	</table>
+
+	<br><br>
+
+	<!-- СКИДКИ -->
+	<table class="table discounts">
+		<caption>
+			2 скидки
+		</caption>
+		<thead>
+			<tr>
+				<th>
+					<input type="checkbox" id="disc0">
+					<label for="disc0" class="label_check">
+						<i class="icon"></i>
+					</label>
+				</th>
+				<th>Наименование</th>
+				<th>Размер скидки</th>
+			</tr>
+		</thead>
+		<tr id="search">
+			<td colspan="3">
+				<!-- Строка поиска -->
+				<!-- <include data-file="tables/include/search-input.html"></include> -->
+				<input type="search" placeholder="Название, артикул или штрих-код товара">
+<i class="icon-search"></i>
+<!-- Допкласс visible -->
+<i class="loader visible"></i>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="checkbox" id="disc2" checked>
+				<label for="disc2" class="label_check">
+					<i class="icon"></i>
+				</label>
+			</td>
+			<td>Скидка постоянного клиента</td>
+			<td>5%</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="checkbox" id="disc3">
+				<label for="disc3" class="label_check">
+					<i class="icon"></i>
+				</label>
+			</td>
+			<td>Скидка выходного дня</td>
+			<td>100 ₽</td>
+		</tr>
+	</table>
+
+	<br><br>
+
+	<!-- ЧЕКИ -->
+	<table class="table cheki">
+		<caption>10 чеков</caption>
+		<thead>
+			<tr>
+				<th>Дата создания</th>
+				<th>Тип документа</th>
+				<th>Номер смены</th>
+				<th>Номер документа</th>
+				<th>Сумма</th>
+				<th>Кассир</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tr id="search">
+			<td colspan="7">
+				<!-- Строка поиска -->
+				<!-- <include data-file="tables/include/search-input.html"></include> -->
+			</td>
+		</tr>
+		<tr>
+			<td>22.06.2016, 23:37:46</td>
+			<td>Возврат</td>
+			<td>Смена №1</td>
+			<td>Документ №12</td>
+			<td>106,00 ₽</td>
+			<td>Быцаева Любовь</td>
+			<td><a class="doc_refund"></a></td>
+		</tr>
+		<tr>
+			<td>22.06.2016, 23:37:46</td>
+			<td>Возврат</td>
+			<td>Смена №1</td>
+			<td>Документ №12</td>
+			<td>106,00 ₽</td>
+			<td>Быцаева Любовь</td>
+			<td><a class="doc_refund"></a></td>
+		</tr>
+		<tr>
+			<td>22.06.2016, 23:37:46</td>
+			<td>Возврат</td>
+			<td>Смена №1</td>
+			<td>Документ №12</td>
+			<td>106,00 ₽</td>
+			<td>Быцаева Любовь</td>
+			<td><a class="doc_refund"></a></td>
+		</tr>
+	</table>
+
+<br><br>
+
+	<!-- ЗАКАЗЫ -->
+	<table class="table orders">
+		<caption>500 заказов</caption>
+		<!-- Шапка таблицы -->
+		<thead>
+			<tr>
+				<th>
+					<input type="checkbox" id="orders0">
+					<label for="orders0" class="label_check">
+						<i class="icon"></i>
+					</label>
+				</th>
+				<th>Дата создания</th>
+				<th>Номер</th>
+				<th>Тип заказа</th>
+				<th>Сумма</th>
+				<th>Комментарий</th>
+			</tr>
+		</thead>
+		<!-- Строка поиска -->
+		<tr id="search">
+			<td colspan="6">
+				<!-- Строка поиска -->
+				<!-- <include data-file="tables/include/search-input.html"></include> -->
+			</td>
+		</tr>
+		<!-- Строки данных -->
+		<tr>
+			<td>
+				<input type="checkbox" id="orders1">
+				<label for="orders1" class="label_check">
+					<i class="icon"></i>
+				</label>
+			</td>
+			<td>22.06.2016, 23:37:46</td>
+			<td>123456789012345000</td>
+			<td>Продажа</td>
+			<td>500,00 ₽</td>
+			<td>Заказ на товары по счету №24324 от 29.02.2018</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="checkbox" id="orders2">
+				<label for="orders2" class="label_check">
+					<i class="icon"></i>
+				</label>
+			</td>
+			<td>22.06.2016, 23:37:46</td>
+			<td>123456</td>
+			<td>Продажа</td>
+			<td>500,00 ₽</td>
+			<td>Заказ на товары</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="checkbox" id="orders3" checked>
+				<label for="orders3" class="label_check">
+					<i class="icon"></i>
+				</label>
+			</td>
+			<td>22.06.2016, 23:37:46</td>
+			<td>123456789012345000</td>
+			<td>Продажа</td>
+			<td>500,00 ₽</td>
+			<td>Заказ на товары по счету №24324 от 29.02.2018</td>
+		</tr>
+	</table>
+
+
+	<!-- Ничего не найдено -->
+	<!-- <tr class="no_search_results">
+		<td colspan="5">
+			<div class="light_block">По запросу ничего не найдено</div>
+		</td>
+	</tr> -->
+
+	<!-- Прогрузка строк -->
+	<!-- <tr id="loading_block_row">
+		<td colspan="5" class="loading_block"></td>
+	</tr> -->
+
+
+
+	<!-- FLEX -->
+	<div class="legend  mt60"><span>Flex (Старая реализация таблиц)</span></div>
+	<!-- ЧЕКИ -->
+	<div class="table_records_amount  after_tabs">10 чеков</div>
+	<div class="widget_block">
+		<div class="table  table_docs">
+			<div class="table_head">
+				<div class="doc_date">Дата создания</div>
+				<div class="doc_type">Тип документа</div>
+				<div class="doc_smena_number">Номер смены</div>
+				<div class="doc_number">Номер документа</div>
+				<div class="doc_amount">Сумма</div>
+				<div class="doc_cashier">Кассир</div>
+				<a class="doc_refund"></a>
+			</div>
+			<div class="table_row  row_link_search">
+				<input type="search" class="small  w100" placeholder="Кассир, номер документа или сумма">
+			</div>
+
+			<div class="table_row  row_link">
+				<div class="doc_date">22.06.2016, 23:37:46</div>
+				<div class="doc_type">Возврат</div>
+				<div class="doc_smena_number">Смена №1</div>
+				<div class="doc_number">Документ №12</div>
+				<div class="doc_amount">106,00 ₽</div>
+				<div class="doc_cashier">Быцаева Любовь</div>
+				<a class="doc_refund"></a>
+			</div>
+			<div class="table_row  row_link">
+				<div class="doc_date">31.07.2016, 17:12:12</div>
+				<div class="doc_type">Продажа</div>
+				<div class="doc_smena_number">Смена №1</div>
+				<div class="doc_number">Документ №10</div>
+				<div class="doc_amount">396,00 ₽</div>
+				<div class="doc_cashier">Быцаева Любовь</div>
+				<a class="doc_refund"></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Таблица заказов -->
+	<div class="table_records_amount  after_tabs">6 заказов</div>
+	<div class="widget_block">
+		<div class="table  table_docs">
+			<div class="table_head">
+				<div class="doc_date">Дата создания</div>
+				<div class="doc_number__orders">Номер</div>
+				<div class="doc_type">Тип заказа</div>
+				<div class="doc_amount">Сумма</div>
+				<div class="doc_cashier">Кассир</div>
+				<div class="doc_comment">Комментарий</div>
+			</div>
+			<div class="table_row  row_link_search">
+				<input type="search" class="small  w100" placeholder="Кассир, номер документа или сумма">
+			</div>
+			<div class="table_row  row_link">
+				<div class="doc_date">22.06.2016, 23:37:46</div>
+				<div class="doc_number__orders">123456789012345000</div>
+				<div class="doc_type">Продажа</div>
+				<div class="doc_amount">500,00 ₽</div>
+				<div class="doc_cashier">Быцаева Любовь</div>
+				<div class="doc_comment">Заказ на товары по счету №24324 от 29.02.2018</div>
+			</div>
+			<div class="table_row  row_link">
+				<div class="doc_date">02.01.2017, 33:37:46</div>
+				<div class="doc_number__orders">89</div>
+				<div class="doc_type">Возврат</div>
+				<div class="doc_amount">950,00 ₽</div>
+				<div class="doc_cashier">Рынок</div>
+				<div class="doc_comment"></div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Взносы и налоги</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css.css" rel="stylesheet" media="all">
+	<link href="screen--tax-and-fee.css" rel="stylesheet" media="all">
+</head>
+<body>
+	<!-- ШАПКА -->
+	<header>
+		<!-- Строка 1 -->
+		<nav class="header__row-1">
+			<div class="project-links">
+				<a href="#" class="logo"></a>
+				<a href="#" class="active">Банк</a>
+				<a href="#">Касса</a>
+				<a href="#">Гарантии</a>
+				<a href="#">Инвестиции</a>
+			</div>
+			<div class="header__row-1__buttons">
+				<a href="#" class="icon--heart-solid">Подарок</a>
+				<a href="#" class="icon--settings"></a>
+				<a href="#" class="icon--logout"></a>
+			</div>
+		</nav>
+		<!-- Строка 2 -->
+		<nav class="header__row-2">
+			<div class="actions-menu">
+				<div class="search-button icon--search"></div>
+				<a href="#">Деньги</a>
+				<a href="#">Контакты</a>
+				<a href="#">Зарплата</a>
+				<div class="icon--dropdown icon-is-2nd">Еще</div>
+			</div>
+
+			<div class="plus-button"></div>
+
+			<div class="company-menu-wrapper">
+				<div class="company-menu icon--dropdown icon-is-2nd">ООО «Родные просторы»</div>
+			</div>
+		</nav>
+	</header>
+
+	<!-- ОСНОВНОЕ СОДЕРЖИМОЕ -->
+	<main>
+		<div class="page">
+			<h2>Состояние взносов и налогов на сегодня</h2>
+
+			<table class="table-list tax-and-fee">
+				<tr>
+					<td>Доход с 1 января по 20 февраля</td>
+					<td>50 000 ₽</td>
+				</tr>
+				<tr>
+					<td>Налог от дохода 6%</td>
+					<td>3 000 ₽</td>
+				</tr>
+				<tr>
+					<td>Оплачено взносов</td>
+					<td>0 ₽ <i class="icon--info"></i></td>
+				</tr>
+				<tr>
+					<td>Всего осталось взносов за год</td>
+					<td>32 385 ₽ <i class="icon--info"></i></td>
+				</tr>
+				<tr class="total">
+					<td>Рекомендуем оплатить взносов до 31 марта</td>
+					<td>3 000 ₽ <i class="icon--info"></i></td>
+				</tr>
+			</table>
+
+			<div class="checkbox">
+				<input type="checkbox" id="collect-money">
+				<label for="collect-money" class="label--checkbox">Копить средства на оплату налога и взносов</label>
+				<div class="description">Будем автоматически сохранять 6% от всех доходов на специальный счет <a href="#">Подробнее</a></div>
+			</div>
+
+			<a class="button">Оплатить взносы</a>
+		</div>
+
+		<!-- Сайдбар -->
+		<aside class="buhgalter">
+			<h3>Бухгалтер МодульБанка</h3>
+			<p>Денис, если есть вопросы по расчету налога и взносов, напишите нам</p>
+			<a class="button small secondary">Задать вопрос</a>
+			<div class="info-block icon--info">Расчет налога и&nbsp;взносов не&nbsp;учитывает доходы по&nbsp;кассе и&nbsp;эквайрингу, а&nbsp;также в&nbsp;других банках.</div>
+		</aside>
+	</main>
+	
+	
+	<!-- Кнопка чата -->
+	<div class="chat-button"></div>
+
+
+
+
+
+
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

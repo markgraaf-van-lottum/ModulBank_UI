@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Подписки (Счета)</title>
+	<link rel="stylesheet" href="css/style_kassa.css">
+	<link rel="stylesheet" href="css/other-screens-link.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/init.js"></script>
+</head> 
+<body>
+<!-- prev/next screen -->
+	<a class="other-screens-link prev" href="products__page_add--modificators.html"></a>
+	<a class="other-screens-link next" href="settings__billing__my-request.html"></a>
+	
+<!-- <include data-file="kassa_header.html"></include> -->
+
+<header>
+	<div class="header_logo">
+		<a href="#">Модульбанк</a>
+	</div>
+
+	<div class="header_menu free_items">
+		<div class="header_menu_inner">
+			<ul>
+				<li><a><span>Статистика</span></a></li>
+				<li><a><span>Контрагенты</span></a></li>
+				<li><a><span>Скидки</span></a></li>
+				<li><a><span>Документы</span></a></li>
+				<li><a><span>Товары</span></a></li>
+				<li><a><span>Горячие клавиши</span></a></li>
+				<!-- <li class="active"><a><span>Горячие клавиши</span></a></li> -->
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="header_profile">
+
+		<!-- кнопка выйти -->
+		<div class="header_profile_logout">
+			<a href="#" class="icon-logout"></a>
+		</div>
+
+		<!-- кнопка настроек -->
+		<div class="header_profile_settigs">
+			<a href="#" class="icon-settings"></a>
+		</div>
+
+		<!-- название компании -->
+		<div class="header_profile_name">
+			<a href="#" class="icon-pos drop-target" data-theme="drop_header_pos">Имя ТП</a>
+			<div class="drop-content">
+				<div class="drop-content-inner">
+					<ul class="drop-menu f_small">
+						<li><a class="icon-check">Дмитриевская точка</a></li>
+						<li><a>Ленинский проспект</a></li>
+						<li><a>Ленинский проспект 2</a></li>
+						<li><a>Ленинский проспект 3</a></li>
+						<li><a>Бульвар Славы</a></li>
+						<li><a>Бульвар Славы (Веранда)</a></li>
+						<li><a>Бульвар Славы (Авто)</a></li>
+						<li><a class="icon-settings">Все точки продаж</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</header>
+
+<!-- Кнопка "Вверх" -->
+<!-- <a class="button_up"></a> -->
+
+<!-- кнопка открытия чата -->
+<!-- <div class="button_chat">
+	<label>7</label>
+	<a href="#"></a>
+</div> -->
+
+<article class="page  open">
+
+	<!-- шапка слоя -->
+	<div class="page_header">
+		<a class="page_close icon-close"></a>
+		<a class="page_expand icon-fullsize"></a>
+		<h1>Настройки</h1>
+	</div>
+
+	<!-- контент слоя  -->
+	<div class="page_content  page_content__settings">
+
+		<div class="tabs tabs_vertical">
+			<!-- Меню слева -->
+			<div class="tabs_menu">
+				<ul>
+					<li class="title">Подписки</li>
+					<li><a>Мои кассы</a></li>
+					<li class="active"><a>Счета</a></li>
+					<li><a class="two_rows">Передаточные документы</a></li>
+					<li class="title">Настройки</li>
+					<li><a>Смена пароля</a></li>
+					<li><a>Сервисы</a></li>
+				</ul>
+			</div>
+
+			<!-- Содержимое пункта меню -->
+			<div class="tabs_content">
+				<div class="tab_bills  buy_kassa_pay_bill">
+					<div class="pay_by_card">
+						<!-- Не подключено -->
+						<div class="wrap4border">
+							<div class="title">Оплачивайте счета картой</div>
+							<flex>
+								<div>
+									<div class="f_xsmall">Оплата по счетам будет списываться с карты каждый месяц, 30 числа.</div>
+									<div class="form_buttons">
+										<a class="button small">Подключить</a>
+									</div>
+								</div>
+								<div class="bg"></div>
+							</flex>
+							<div class="secure_pay">Мы не храним информацию о вашей карте. <br>Все платежи передаются по зашифрованным каналам. 
+								<div class="links">
+									<a>Подробнее о безопасности</a>
+									<a>Договор оферты</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Подключено -->
+						<!-- <div class="wrap4border">
+							<div class="title">Оплата картой подключена</div>
+							<flex>
+								<div>
+									<div class="f_xsmall">Каждый месяц, 30 числа, мы будем списывать оплату за МодульКассу.</div>
+									<div class="links">
+										<div><a>Изменить карту</a></div>
+										<div><a>Отменить оплату картой</a></div>
+										<div><a>Договор оферты</a></div>
+									</div>
+								</div>
+								<div class="bg"></div>
+							</flex>
+							<div class="secure_pay">Мы не храним информацию о вашей карте. <br>Все платежи передаются по зашифрованным каналам. 
+								<div class="links">
+									<a>Подробнее о безопасности</a>
+									<a>Договор оферты</a>
+								</div>
+							</div>
+						</div> -->
+					</div>
+
+					<flex class="bill">
+						<div class="left">
+							<div class="bill_name">Счет на оплату №6283648242</div>
+							<a class="icon-share"></a>
+							<div class="bill_date">За июнь 2018</div>
+							<div class="pay_date">Оплатить до 26.11.2017</div>
+						</div>
+						<div class="right">
+							<div class="bill_amount">24 000 ₽</div>
+							<div class="info_label_error  middle">Не оплачено</div>
+						</div>
+					</flex>
+
+					<flex class="bill">
+						<div class="left">
+							<div class="bill_name">Счет на оплату №1</div>
+							<a class="icon-share"></a>
+							<div class="bill_date">За май 2018</div>
+						</div>
+						<div class="right">
+							<div class="bill_amount">4 000 ₽</div>
+							<div class="info_label_success  middle">Оплачено</div>
+						</div>
+					</flex>
+
+					<flex class="bill">
+						<div class="left">
+							<div class="bill_name">Счет на оплату №0</div>
+							<a class="icon-share"></a>
+							<div class="bill_date">За апрель 2018</div>
+						</div>
+						<div class="right">
+							<div class="bill_amount">500 000 ₽</div>
+							<div class="info_label_success  middle">Оплачено</div>
+						</div>
+					</flex>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+</article>
+
+<!-- Уведомления -->
+<!-- Ошибка -->
+<div class="notification  error  w360">
+	<div class="title">Ошибка подключения</div>
+	<div class="text">Проверьте реквизиты, баланс карты и&nbsp;повторите попытку.</div>
+</div>
+
+<!-- Achtung -->
+<!-- <div class="notification  warning  w360">
+	<div class="title">Обратите внимание</div>
+	<div class="text">Новый тариф начнет действовать с 15 декабря 2017г</div>
+</div> -->
+
+<!-- Все Ок -->
+<!-- <div class="notification  success  w360">
+	<div class="text">Оплата по карте подключена</div>
+</div> -->
+
+</body>
+</html>

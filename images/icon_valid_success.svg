@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.1 (28215) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_check</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9,0 C4.02631579,0 0,4.02631579 0,9 C0,13.9736842 4.02631579,18 9,18 C13.9736842,18 18,13.9736842 18,9 C18,4.02631579 13.9736842,0 9,0 L9,0 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="18" height="18" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Регистрация-new" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Регистрация-Copy-2" transform="translate(-606.000000, -389.000000)" stroke="#81C624">
+            <g id="icon_check" transform="translate(606.000000, 389.000000)">
+                <use id="Shape" mask="url(#mask-2)" stroke-width="3" xlink:href="#path-1"></use>
+                <path d="M4.95049024,8.95049024 L7.5,11.5" id="Line" stroke-width="1.5" stroke-linecap="round"></path>
+                <path d="M7.5,11.5 L13.0226803,5.97731948" id="Line" stroke-width="1.5" stroke-linecap="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,27 @@
+.table-list.tax-and-fee {
+	width: calc(100% - 32px);
+}
+.table-list.tax-and-fee td:last-child {
+	text-align: right;
+	font-size: 16px;
+	color: #717D83;
+}
+
+aside.buhgalter {
+	padding-top: 150px;
+	background: url(img/image--buhgalter.png) 14px 0 / 173px auto no-repeat;
+}
+aside.buhgalter h3 {
+	margin-bottom: 8px;
+}
+aside.buhgalter p {
+	font-size: 13px;
+	line-height: 18px;
+}
+aside.buhgalter .button.small {
+	min-width: 180px;
+	margin-top: 15px;
+}
+aside.buhgalter .info-block {
+	margin-top: 40px;
+}

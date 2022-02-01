@@ -1,0 +1,68 @@
+<svg width="63" height="60" viewBox="0 0 63 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" fill="none">
+<g id="Component 11">
+<g id="Rectangle 266">
+<rect width="58.8235" height="47.0588" rx="2" transform="translate(0 12.9412)" fill="url(#paint0_linear)"/>
+</g>
+<g id="Vector">
+<path d="M 51.7647 0L 0 0L 0 32.9412L 51.7647 32.9412L 51.7647 0Z" transform="translate(3.52942 23.5295)" fill="white"/>
+</g>
+<g id="Vector_2">
+<path d="M 1.76471 3.52941C 2.73933 3.52941 3.52941 2.73933 3.52941 1.76471C 3.52941 0.790086 2.73933 0 1.76471 0C 0.790086 0 0 0.790086 0 1.76471C 0 2.73933 0.790086 3.52941 1.76471 3.52941Z" transform="translate(3.52942 16.4707)" fill="white"/>
+</g>
+<g id="Vector_3">
+<path d="M 1.76471 3.52941C 2.73933 3.52941 3.52941 2.73933 3.52941 1.76471C 3.52941 0.790086 2.73933 0 1.76471 0C 0.790086 0 0 0.790086 0 1.76471C 0 2.73933 0.790086 3.52941 1.76471 3.52941Z" transform="translate(9.41177 16.4707)" fill="white"/>
+</g>
+<g id="Vector_4">
+<path d="M 1.76471 3.52941C 2.73933 3.52941 3.52941 2.73933 3.52941 1.76471C 3.52941 0.790086 2.73933 0 1.76471 0C 0.790086 0 0 0.790086 0 1.76471C 0 2.73933 0.790086 3.52941 1.76471 3.52941Z" transform="translate(15.2941 16.4707)" fill="white"/>
+</g>
+<g id="Mask Group">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="12" width="59" height="48">
+<g id="Rectangle 266.1">
+<rect width="58.8235" height="47.0588" rx="2" transform="translate(0 12.9412)" fill="url(#paint1_linear)"/>
+</g>
+</mask>
+<g mask="url(#mask0)">
+<g id="Ellipse 3.1">
+<path d="M 27.0588 13.5294C 27.0588 21.0015 21.0015 27.0588 13.5294 27.0588C 6.05732 27.0588 0 21.0015 0 13.5294C 0 6.05732 6.05732 0 13.5294 0C 21.0015 0 27.0588 6.05732 27.0588 13.5294Z" transform="translate(38.8235 2.35303)" fill="#A8C6DF" fill-opacity="0.6" style="mix-blend-mode:multiply"/>
+</g>
+</g>
+</g>
+<g id="Ellipse 3">
+<ellipse cx="13.5294" cy="13.5294" rx="13.5294" ry="13.5294" transform="translate(35.2941 0)" fill="url(#paint2_linear)"/>
+</g>
+<g id="Rectangle 267">
+<rect width="3.52941" height="15.2941" transform="translate(47.0588 5.88232)" fill="white"/>
+</g>
+<g id="Rectangle 267.1">
+<rect width="3.52941" height="15.2941" transform="matrix(0 1 -1 0 56.4706 11.7646)" fill="white"/>
+</g>
+<g id="Rectangle 269">
+<rect x="1" y="1" width="40.3529" height="6.23529" rx="3" stroke-width="2" transform="translate(8.23529 43.5293)" stroke="#F09292"/>
+</g>
+<g id="Rectangle 269.1">
+<path d="M 0 4C 0 1.79086 1.79086 0 4 0L 11.7647 0L 11.7647 8.23529L 4 8.23529C 1.79086 8.23529 0 6.44443 0 4.23529L 0 4Z" transform="translate(8.23529 43.5293)" fill="#F09292"/>
+</g>
+<g id="&#226;&#130;&#189;">
+<path d="M 6.39844 13.1953L 3.88281 13.1953L 3.88281 15L 1.91406 15L 1.91406 13.1953L 0.3125 13.1953L 0.3125 11.6094L 1.91406 11.6094L 1.91406 10.7734L 0.3125 10.7734L 0.3125 9.1875L 1.91406 9.1875L 1.91406 3.625L 6.26562 3.625C 7.52083 3.625 8.52344 3.95312 9.27344 4.60938C 10.0234 5.26042 10.3984 6.1276 10.3984 7.21094C 10.3984 8.3151 10.0417 9.18229 9.32812 9.8125C 8.61458 10.4375 7.6224 10.7578 6.35156 10.7734L 3.88281 10.7734L 3.88281 11.6094L 6.39844 11.6094L 6.39844 13.1953ZM 3.88281 9.1875L 6.23438 9.1875C 6.94271 9.1875 7.48438 9.02344 7.85938 8.69531C 8.23438 8.36719 8.42188 7.8776 8.42188 7.22656C 8.42188 6.64323 8.23698 6.16667 7.86719 5.79688C 7.5026 5.42708 6.9974 5.23438 6.35156 5.21875L 3.88281 5.21875L 3.88281 9.1875Z" transform="translate(24.7059 22.353)" fill="#F09292"/>
+</g>
+</g>
+</g>
+<defs>
+
+<linearGradient id="paint0_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 47.0588 -58.8235 0 58.8235 0)">
+<stop stop-color="#D3C6E2"/>
+<stop offset="1" stop-color="#F09292"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 47.0588 -58.8235 0 58.8235 0)">
+<stop stop-color="#B2E2F7"/>
+<stop offset="1" stop-color="#41CFC8"/>
+</linearGradient>
+<linearGradient id="paint2_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 27.0588 -27.0588 0 27.0588 0)">
+<stop stop-color="#C0EB69"/>
+<stop offset="1" stop-color="#6BC9F2"/>
+</linearGradient>
+
+</defs>
+</svg>
+

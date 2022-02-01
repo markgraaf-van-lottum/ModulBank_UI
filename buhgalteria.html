@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>МодульБухгалтерия</title>
+	<link rel="stylesheet" href="css/style_buhgalteria.css">
+	<link rel="stylesheet" href="css/other-screens-link.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/init.js"></script>
+</head>
+<body>
+	<!-- prev/next screen -->
+	<a class="other-screens-link prev" href="buhgalteria_employee_invite_registration.html"></a>
+	<a class="other-screens-link next" href="management.html"></a>
+
+	<!-- <include data-file="buhgalteria_header.html"></include> -->
+	<!-- <%= require('html-loader!./buhgalteria_header.html') %> -->
+
+<header>
+	<!-- <div class="header_logo">
+		<a href="#"><strong>Модуль</strong>Бухгалтерия</a>
+	</div> -->
+
+	<!-- Меню + -->
+	<!-- <div class="header_add">
+		<a class="add drop-target" data-position="bottom center" data-theme="header_add_submenu"></a>
+		<div class="drop-content">
+			<div class="header_add_drop drop-content-inner inner_pad">
+
+				<div class="header_add__items_wrapper">
+					<div class="col1 ">
+						<a class="header_add__item">
+							<div class="item_icon  icon-user-add"></div>
+							<div class="item_name">Добавить клиента</div>
+						</a>
+					</div>
+					<div class="col2 ">
+						<a class="header_add__item">
+							<div class="item_icon  icon-round-check"></div>
+							<div class="item_name">Создать задачу</div>
+						</a>
+					</div>
+					<div class="col3 ">
+						<a class="header_add__item">
+							<div class="item_icon  icon-order"></div>
+							<div class="item_name">Выставить счет</div>
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div> -->
+
+	<div class="header_menu">
+		<ul>
+			<li class="active"><a>Задачи</a></li>
+			<li><a>Управление</a></li>
+			<li><a>Поиск компании</a></li>
+		</ul>
+	</div>
+
+
+	<div class="header_task_actions">
+		<!-- ЗАВЕРШИТЬ ЗАДАЧУ -->
+		<div class="header_task_actions_left">
+			<a class="button small header_task_close drop-target" data-position="bottom center" data-theme="drop_task_actions">Закрыть задачу</a>
+
+			<div class="drop-content">
+				<div class="drop-content-inner">
+					<div class="center_xy mb24">
+						<i class="icon icon_thumb_up"></i>
+						<div class="mt16 fw_m">Задача решена!</div>
+					</div>
+
+					<div class="drop_task_buttons">
+						<div class="button small">Взять следующую (5)</div>
+						<div class="button small grey">Завершить работу</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ТАЙМЕР ЗАДАЧИ -->
+		<div class="header_task_timer">05:15</div>
+
+		<!-- СЛЕДУЮЩАЯ ЗАДАЧА -->
+		<!-- <div class="button small header_task_next">Следующая</div> -->
+
+
+		<!-- ОТЛОЖИТЬ ЗАДАЧУ ---------------------------------------->
+		<div class="header_task_actions_right">
+			<!-- <a class="button small header_task_pause drop-target" data-position="bottom center" data-theme="drop_task_actions">Отложить задачу</a> -->
+
+			<!-- ОТЛОЖИТЬ РАБОТУ НАД ЗАДАЧЕЙ? -->
+			<!-- <div class="drop-content">
+				<div class="drop-content-inner">
+					<div class="center_xy mb16">
+						<i class="icon icon_pause"></i>
+						<div class="mt16 fw_m">Отложить работу над задачей?</div>
+					</div>
+
+					<textarea class="js_autosize textarea_middle w100" placeholder="Укажите по какой причине выполнение задачи откладывается"></textarea>
+
+					<div class="drop_task_buttons">
+						<div class="button small">Отложить</div>
+						<div class="button small grey">Вернуть в работу</div>
+					</div>
+				</div>
+			</div> -->
+		</div>
+
+		<!-- ЗАДАЧА ОТЛОЖЕНА -->
+		<!-- <div class="drop-content">
+			<div class="drop-content-inner">
+				<div class="center_xy mb24">
+					<i class="icon icon_pause"></i>
+					<div class="mt16 fw_m">Задача отложена!!</div>
+				</div>
+
+				<div class="drop_task_buttons">
+					<div class="button small">Взять следующую (5)</div>
+					<div class="button small grey">Завершить работу</div>
+				</div>
+			</div>
+		</div> -->
+		<!-- ОТЛОЖИТЬ ЗАДАЧУ ---------------------------------------->
+
+
+		<!-- ВЗЯТЬ ЗАДАЧУ -->
+		<!-- <div class="button small header_task_start">Начать работу</div> -->
+
+		<!-- ПЕРЕДАТЬ ЗАДАЧУ -->
+		<div class="header_task_actions_right">
+			<a class="button small header_task_pause drop-target" data-position="bottom center" data-theme="drop_task_actions"><i class="icon-redirect mr8"></i>Передать</a>
+
+			<!-- ОТЛОЖИТЬ РАБОТУ НАД ЗАДАЧЕЙ? -->
+			<div class="drop-content">
+				<div class="drop-content-inner">
+					<div class="fw_m a_center mb16">Перенаправить задачу?</div>
+
+					<div class="form_group">
+						<div class="jsRadSelect2 drop_item_wrap w100 small" data-rd-search="false" data-rd-placeholder="Выберите группу исполнителя" data-rd-is-multy-select="false" data-filter="false">
+							<span class="jsRadSelect2Options">Алия Арсланова</span>
+							<span class="jsRadSelect2Options">Андрей Вариков</span>
+						</div>
+					</div>
+
+					<div class="form_group">
+						<textarea class="js_autosize textarea_middle w100" placeholder="Комментарий для нового исполнителя"></textarea>
+					</div>
+
+					<div class="drop_task_buttons">
+						<div class="button small">Передать</div>
+						<div class="button small grey">Отмена</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="header_profile">
+
+		<!-- Имя -->
+		<div class="header_profile_name">
+			<a href="#" class="drop-target icon-menu-clients" data-theme="drop_header_pos">Смирнова Елена</a>
+			<div class="drop-content">
+				<div class="drop-content-inner">
+					<ul class="drop-menu f_small">
+						<li><a class="icon-check">Дмитриевская точка</a></li>
+						<li><a>Ленинский проспект</a></li>
+						<li><a>Бульвар Славы</a></li>
+						<li><a>Бульвар Славы (Веранда)</a></li>
+						<li><a>Бульвар Славы (Авто)</a></li>
+						<li><a class="icon-settings">Все точки продаж</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- кнопка настроек -->
+		<div class="header_profile_settigs">
+			<a href="#" class="icon-settings"></a>
+		</div>
+
+		<!-- кнопка выйти -->
+		<div class="header_profile_logout">
+			<a href="#" class="icon-logout"></a>
+		</div>
+	</div>
+</header>
+
+<!-- кнопка открытия чата -->
+<!-- <div class="button_chat">
+	<label>4</label>
+	<a href="#"></a>
+</div> -->
+
+
+	<section class="main">
+
+		<!-- Левая колонка -->
+		<section class="layout_column">
+			<!-- ЗАДАЧА -->
+			<!-- <include data-file="tasks/task.html"></include> -->
+
+			<!-- СПИСОК ЗАДАЧ -->
+			<!--<include data-file="tasks/tasks_list.html"></include>-->
+			<!-- <%= require('html-loader!./tasks/tasks_list.html') %> -->
+			<!-- HEADER -->
+			<flex class="column_header">
+
+				<flex class="column_header_left">
+					<!-- <button class="back icon-left-big">Все задачи</button> -->
+				</flex>
+
+				<flex class="column_header_title">
+					<div class="header_title">Задачи</div>
+				</flex>
+
+				<flex class="column_header_right">
+					<!-- <button class="edit icon-pencil"></button> -->
+				</flex>
+
+			</flex>
+
+
+			<!-- CONTENT -->
+			<div class="column_content">
+				<flex class="task_search_wrap">
+					<div class="input_group task_search w100">
+						<input type="search" class="input_search small" placeholder="Найти задачу">
+						<button class="task_filter icon-filter"></button>
+					</div>
+					<button class="task_excel icon-excel"></button>
+					<a href="#" class="button_clean xsmall download-excel">Скачать</a>
+				</flex>
+
+
+				<div class="task_filter_tags">
+					<div class="tag_item info_label_success big">
+						<span>с 5 по 8 декабря</span>
+						<a class="icon-delete-circle"></a>
+					</div>
+					<div class="tag_item info_label_primary big">
+						<span>плановые задачи</span>
+						<a class="icon-delete-circle"></a>
+					</div>
+					<div class="tag_item info_label_success big">
+						<span>с 5 по 8 декабря</span>
+						<a class="icon-delete-circle"></a>
+					</div>
+					<div class="tag_item info_label_primary big">
+						<span>плановые задачи</span>
+						<a class="icon-delete-circle"></a>
+					</div>
+				</div>
+
+
+				<!-- Список задач -->
+				<div class="tasks_list">
+					<flex class="task">
+						<div class="task_info">
+							<div class="task_name">Проверка базы для клиентов с “историей”</div>
+							<div class="task_performer icon-menu-clients">Не назначен</div>
+						</div>
+						<a class="task_date icon-date"></a>
+						<div class="task_status">
+				<!--
+					info_label 			= В очереди
+					info_label_primary 	= В работе
+					info_label_success 	= Завершена
+				-->
+				<div class="info_label middle"></div>
+			</div>
+			<div class="task_last_edit">16:30</div>
+		</flex>
+
+
+		<flex class="task">
+			<div class="task_info">
+				<div class="task_name">Проверка базы для клиентов с “историей”</div>
+				<div class="task_performer icon-menu-clients">Андронов Алексей</div>
+			</div>
+			<a class="task_date icon-date"></a>
+			<div class="task_status expired">
+				<!--
+					info_label 			= В очереди
+					info_label_primary 	= В работе
+					info_label_success 	= Завершена
+				-->
+				<div class="info_label_primary middle"></div>
+			</div>
+			<div class="task_last_edit">16:30</div>
+		</flex>
+
+
+		<flex class="task">
+			<div class="task_info">
+				<div class="task_name">Проверка базы для клиентов с “историей”</div>
+				<div class="task_performer icon-menu-clients">Иванов Александр</div>
+			</div>
+			<a class="task_date icon-date"></a>
+			<div class="task_status">
+				<!--
+					info_label 			= В очереди
+					info_label_primary 	= В работе
+					info_label_success 	= Завершена
+				-->
+				<div class="info_label_success middle"></div>
+			</div>
+			<div class="task_last_edit">16:30</div>
+		</flex>
+
+
+		<flex class="task">
+			<div class="task_info">
+				<div class="task_name">Проверка базы для клиентов с “историей”</div>
+				<div class="task_performer icon-menu-clients">Иванов Александр</div>
+			</div>
+			<a class="task_date icon-date"></a>
+			<div class="task_status">
+				<!--
+					info_label 			= В очереди
+					info_label_primary 	= В работе
+					info_label_success 	= Завершена
+				-->
+				<div class="info_label_in_plan middle"></div>
+			</div>
+			<div class="task_last_edit">16:30</div>
+		</flex>
+	</div>
+	</div>
+
+
+			<!-- СТАТИСТИКА ЗАДАЧ -->
+			<!-- <include data-file="tasks/tasks_stats.html"></include> -->
+		</section>
+
+
+		<!-- Центральная колонка -->
+		<section class="layout_column">
+			<!-- <include data-file="clients/clients_list.html"></include> -->
+
+			<!--<include data-file="clients/client_files.html"></include>-->
+
+			<!--<include data-file="clients/client_card.html"></include>-->
+
+			<!--<include data-file="clients/client_context.html"></include>-->
+			<!-- <%= require('html-loader!./clients/client_context.html') %> -->
+			<!-- Хедер -->
+<div class="column_header">
+	<flex class="column_header">
+
+		<flex class="column_header_left">
+			<button class="back icon-left-big">Все клиенты</button>
+		</flex>
+
+		<flex class="column_header_title">
+			<div class="header_title">Карточка клиента</div>
+		</flex>
+
+		<flex class="column_header_right">
+			<button class="open_1c">Открыть 1C</button>
+			<button class="edit  icon-pencil"></button>
+		</flex>
+
+	</flex>
+</div>
+
+<div class="column_content">
+	<div class="column_title">ИП Иванов Антон Николаевич</div>
+	<div class="status">
+		<div class="info_label_success  middle">Подключен</div>
+	</div>
+	<div class="comment">С ним разговаривать только на ТЫ)))</div>
+
+	<div class="quot quot__secondary">
+		<p>Перед отправкой отчета уведомите клиента</p>
+	</div>
+
+	<div class="quot quot__secondary">
+		<p>Любит общаться на английском</p>
+	</div>
+
+
+	<!-- Вкладки -->
+	<div class="tabs_flat">
+		<a class="tab">Информация</a>
+		<a class="tab">Файлы</a>
+		<a class="tab">Задачи</a>
+		<a class="tab tab__active">Контекст</a>
+	</div>
+
+
+	<!-- Контекст клиента -->
+	<div class="client_context_wrap">
+
+		<div class="client_context_add">
+
+			<div class="button_file_upload">
+				<span class="icon-add-file">
+					<input type="file">
+					<span>Добавить контекст</span>
+				</span>
+			</div>
+		</div>
+
+		<div class="client_context_list">
+
+			<div class="client_context">
+				<div class="client_context_title">Перед отправкой отчета уведомите клиента</div>
+				<div class="client_context_desc">Елена Смирнова, 10 января 2018, 10:23</div>
+
+				<div class="client_context_tags form_group">
+					<div class="info_label default">Отправка отчета</div>
+				</div>
+
+				<div class="client_context_actions">
+					<a class="client_context_edit link_icon icon-pencil"></a>
+					<a class="client_context_delete link_icon icon-trash-bin trash drop-target"></a>
+					<div class="drop-content">
+						<div class="drop-content-inner">
+							<ul class="drop-menu">
+								<li><a>Да, точно</a></li>
+								<li><a>Нет, не точно</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="client_context">
+				<div class="client_context_title">Любит общаться на английском</div>
+				<div class="client_context_desc">Екатерина Иванова, 27 октября 2018, 14:12</div>
+
+				<div class="client_context_tags form_group">
+					<div class="info_label default">Общее</div>
+				</div>
+
+				<div class="client_context_actions">
+					<a class="client_context_edit link_icon icon-pencil"></a>
+					<a class="client_context_delete link_icon icon-trash-bin trash drop-target"></a>
+					<div class="drop-content">
+						<div class="drop-content-inner">
+							<ul class="drop-menu">
+								<li><a>Да, точно</a></li>
+								<li><a>Нет, не точно</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="client_context">
+				<div class="client_context_title">Выплачивает зарплату 1 раз в месяц</div>
+				<div class="client_context_desc">Елена Смирнова, 10 января 2018, 10:23</div>
+
+				<div class="client_context_tags form_group">
+					<div class="info_label default">Зарплата</div>
+				</div>
+
+				<div class="client_context_actions">
+					<a class="client_context_edit link_icon icon-pencil"></a>
+					<a class="client_context_delete link_icon icon-trash-bin trash drop-target"></a>
+					<div class="drop-content">
+						<div class="drop-content-inner">
+							<ul class="drop-menu">
+								<li><a>Да, точно</a></li>
+								<li><a>Нет, не точно</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+
+	</flex>
+</div>
+
+		</section>
+
+
+		<!-- Правая колонка -->
+		<section class="layout_column">
+			<flex class="column_header">
+
+				<flex class="column_header_left">
+					<button class="back icon-left-big">Все чаты</button>
+				</flex>
+
+				<flex class="column_header_title">
+					<div class="header_title">Чат</div>
+				</flex>
+
+				<flex class="column_header_right">
+					<button class="edit icon-pencil"></button>
+				</flex>
+
+			</flex>
+		</section>
+
+
+	</section>
+
+</body>
+</html>

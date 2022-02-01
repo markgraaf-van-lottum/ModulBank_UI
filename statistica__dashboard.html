@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Дашборд</title>
+	<link rel="stylesheet" href="css/style_kassa.css">
+	<link rel="stylesheet" href="css/other-screens-link.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/init.js"></script>
+</head>
+<body>
+	<!-- prev/next screen -->
+	<a class="other-screens-link prev" href="settings__billing__my-request.html"></a>
+	<a class="other-screens-link next" href="TABLES.html"></a>
+	
+	<!-- <include data-file="kassa_header.html"></include> -->
+
+<header>
+	<div class="header_logo">
+		<a href="#">Модульбанк</a>
+	</div>
+
+	<div class="header_menu free_items">
+		<div class="header_menu_inner">
+			<ul>
+				<li><a><span>Статистика</span></a></li>
+				<li><a><span>Контрагенты</span></a></li>
+				<li><a><span>Скидки</span></a></li>
+				<li><a><span>Документы</span></a></li>
+				<li><a><span>Товары</span></a></li>
+				<li><a><span>Горячие клавиши</span></a></li>
+				<!-- <li class="active"><a><span>Горячие клавиши</span></a></li> -->
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="header_profile">
+
+		<!-- кнопка выйти -->
+		<div class="header_profile_logout">
+			<a href="#" class="icon-logout"></a>
+		</div>
+
+		<!-- кнопка настроек -->
+		<div class="header_profile_settigs">
+			<a href="#" class="icon-settings"></a>
+		</div>
+
+		<!-- название компании -->
+		<div class="header_profile_name">
+			<a href="#" class="icon-pos drop-target" data-theme="drop_header_pos">Имя ТП</a>
+			<div class="drop-content">
+				<div class="drop-content-inner">
+					<ul class="drop-menu f_small">
+						<li><a class="icon-check">Дмитриевская точка</a></li>
+						<li><a>Ленинский проспект</a></li>
+						<li><a>Ленинский проспект 2</a></li>
+						<li><a>Ленинский проспект 3</a></li>
+						<li><a>Бульвар Славы</a></li>
+						<li><a>Бульвар Славы (Веранда)</a></li>
+						<li><a>Бульвар Славы (Авто)</a></li>
+						<li><a class="icon-settings">Все точки продаж</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</header>
+
+<!-- Кнопка "Вверх" -->
+<!-- <a class="button_up"></a> -->
+
+<!-- кнопка открытия чата -->
+<!-- <div class="button_chat">
+	<label>7</label>
+	<a href="#"></a>
+</div> -->
+
+	<section class="main">
+
+		<div class="section_content full_width">
+			<!-- Баннер овердрафт -->
+			<!-- <include data-file="overdraft/overdraft_banner.html .service_teaser__overdraft"></include> -->
+			<div class="widget_block service_teaser service_teaser__overdraft">
+				<div>
+					<div class="service_teaser_title">Вам доступно 250 000 рублей</div>
+					<div class="service_teaser_description">Оформите кредит под оборот со ставкой 19% годовых.</div>
+				</div>
+				<a class="button middle second">Получить</a>
+			</div>
+
+
+			<!-- Панель вкладок -->
+			<!-- Просто убрать, когда не нужна -->
+			<flex class="title_panel">
+				<div class="tabs_flat  tabs_flat__h1">
+					<a class="tab  tab__active">Все точки</a>
+					<a class="tab">Дмитриевская точка</a>
+					<a class="tab">Кофейня на Ленина</a>
+					<a class="tab">Кофейня на Балтийской</a>
+					<a class="icon-more"></a>
+				</div>
+			</flex>
+
+
+			<!-- Основное содержимое -->
+
+			<!-- БЛОК: Сводка -->
+			<div class="widget_block  analytics_summary">
+				<div class="title__simple">Продажи за сегодня, 21 ноября</div>
+				<div class="total_amount">340 215,00 ₽</div>
+				<flex>
+					<div class="indicator">
+						<div class="label">Доля безналичных</div>
+						<div class="value">34%</div>
+					</div>
+					<div class="indicator">
+						<div class="label">Кол-во чеков</div>
+						<div class="value">513</div>
+					</div>
+					<div class="indicator">
+						<div class="label">Средний чек</div>
+						<div class="value">532,00 ₽</div>
+					</div>
+					<div class="indicator">
+						<div class="label">Кол-во возвратов</div>
+						<div class="value">17</div>
+					</div>
+					<div class="indicator">
+						<div class="label">Сумма возвратов</div>
+						<div class="value">1 532,00 ₽</div>
+					</div>
+				</flex>
+			</div>
+
+
+			<!-- БЛОК: Выручка -->
+			<div class="widget_block  analytics_graph">
+				
+				<!-- Заголовок блока -->
+				<div class="widget_block_title_panel">
+					<span class="title_panel_title  vam">Выручка</span>
+					<span class="icon-info" b365-tooltip title="
+						<div class='mb8'><b>Выручка</b> — общая сумма денег, которую получила торговая точка за день, неделю, месяц или год.</div>
+						Анализ выручки позволяет:<br>
+						— планировать закупки, доставку и продажу товаров;<br>
+						— оптимизировать график рабочих смен и количество сотрудников;<br>
+						— понять, насколько эффективно работает торговая точка.
+						<div class='mt8'>Если выручка низкая — принимайте меры, пока не поздно.</div>">
+					</span>
+					
+					<!-- Фильтр по дате -->
+					<a class="drop-target icon-date button grey small">13 апреля &ndash; 12 апреля</a>
+					<div class="drop-content">
+						<div class="drop-content-inner dashboard-period-choose  kassa_analytics_date-filter">
+							<ul class="drop-menu">
+								<li><a>Сегодня</a></li>
+								<li><a>Вчера</a></li>
+								<li><a>Текущая неделя</a></li>
+								<li><a>Текущий месяц</a></li>
+								<li><a>Текущий год</a></li>
+							</ul>
+							<div class="drop-date-choose">
+								<div class="filter_date_value">
+									<input type="text" name="" id="" class="datetimepicker filter_date_input small date_from">
+									<input type="text" name="" id="" class="datetimepicker filter_date_input small date_to">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<a class="button  light  small">Подробнее</a>
+				</div>
+
+				<!-- График -->
+				<div class="graph">
+					<!-- TMP_placeholder - временный класс, использовать просто DIV -->
+					<div class="TMP_placeholder" style="height: 250px;font-size: 44px;color: wheat;border: 1px solid wheat; line-height: 250px;text-align: center;cursor: alias;">ГРАФИК</div>
+				</div>
+
+			</div>
+			
+			<!-- Вкладки блока -->
+			<flex class="analytics_graph_tabs">
+				<div class="indicator  active">
+					<div class="label">Выручка</div>
+					<div class="value">340 215,00 ₽</div>
+				</div>
+				<div class="indicator">
+					<div class="label">Кол-во чеков</div>
+					<div class="value">513</div>
+				</div>
+				<div class="indicator">
+					<div class="label">Средний чек</div>
+					<div class="value">532,00 ₽</div>
+				</div>
+				<div class="indicator">
+					<div class="label">Сумма возвратов</div>
+					<div class="value">1 532,00 ₽</div>
+				</div>
+			</flex>
+
+
+			<!-- БЛОК: По часам и дням недели -->
+			<div class="widget_block  analytics_graph">
+				
+				<!-- Заголовок блока -->
+				<div class="widget_block_title_panel">
+					<span class="title_panel_title  vam">По часам и дням недели</span>
+					<span class="icon-info" b365-tooltip title="
+						<div class='mb8'><b>Продажи по часам</b> — общая сумма продаж, которая отражает максимальный и минимальный спрос за рабочий день. Используйте эти показатели, чтобы определить «удачные часы» для наибольшей выручки. Если выручка вечером сильно отличается от выручки утром — создайте утренние скидки или акцию, чтобы увеличить спрос.</div>
+						<b>Продажи по дням недели</b> показывают максимальную и минимальную выручку в течение недели. Такой показатель поможет:<br>
+						— увеличить спрос для конкретного дня недели;<br>
+						— создать оптимальный рабочий график для персонала.<br>
+						<div class='mt8'>Если в пятницу продажи превышают выручку понедельника — назначьте больше продавцов на пятницу, и наоборот: оставьте пару человек на понедельник.</div>">
+					</span>
+					
+					<a class="button  light  small">Подробнее</a>
+				</div>
+
+				<!-- График -->
+				<div class="graph  graph__date_time  flex">
+					<!-- TMP_placeholder - временный класс, использовать просто DIV -->
+					<div class="graph_1  TMP_placeholder" style="height: 200px;font-size: 44px;color: wheat;border: 1px solid wheat; line-height: 200px;text-align: center;cursor: alias;">ГРАФИК 1</div>
+
+					<div class="graph_2  TMP_placeholder" style="height: 200px;font-size: 44px;color: wheat;border: 1px solid wheat; line-height: 200px;text-align: center;cursor: alias;">ГРАФИК 2</div>
+				</div>
+
+			</div>
+
+			
+			<!-- БЛОК: Персонал -->
+			<div class="widget_block  analytics_table">
+				
+				<!-- Заголовок блока -->
+				<div class="widget_block_title_panel">
+					<span class="title_panel_title  vam">Персонал</span>
+					<span class="icon-info" b365-tooltip title="
+						<div class='mb16'>Анализ таблицы «Персонал» позволит выявить кто, из сотрудников, работает хорошо, а кто — нет.</div>
+						<div class='mb8'><b>Количество смен</b> — это количество отработанных смен одним продавцом. Используйте этот показатель, как основной.</div>
+						<div class='mb8'><b>Количество продаж</b> — эффективность одного продавца. Если у продавца было 10 смен и 1 продажа — это неэффективный сотрудник.</div>
+						<div class='mb8'><b>Средний чек</b> показывает, насколько успешно один продавец работает с покупателями. Чем выше средний чек — тем больше дополнительных товаров продается покупателям.</div>
+						<div class='mb8'><b>Сумма возвратов</b> — показатель, который определяет качество обслуживания одного продавца. Чем выше качество обслуживания — тем меньше возвратов. Все просто!</div>
+						<div><b>Выручка</b> — максимальная прибыль от одного продавца. Если продавец долгое время занимает лидирующие позиции — выпишите ему премию</div>">
+					</span>
+					
+					<a class="button  light  small">Подробнее</a>
+				</div>
+
+				<!-- Таблица - Персонал -->
+				<div class="table  table_analitics">
+					<!-- Классы icon-sort-up и icon-sort-down при сортировке столбцов -->
+					<div class="table_head">
+						<a class="cashier_name  icon-sort-down">ФИО кассира</a>
+						<a class="earnings">Выручка</a>
+						<a class="average_check  icon-sort-up">Средний чек</a>
+						<a class="sell_amount">Кол-во продаж</a>
+						<a class="change_amount">Кол-во смен</a>
+					</div>
+
+					<div class="table_row">
+						<div class="cashier_name">Матросов Матрос</div>
+						<div class="earnings">55 000,00 ₽</div>
+						<div class="average_check">400 ₽</div>
+						<div class="sell_amount">1200</div>
+						<div class="change_amount">110</div>
+					</div>
+
+					<div class="table_row">
+						<div class="cashier_name">Иванов Иван</div>
+						<div class="earnings">85 400,00 ₽</div>
+						<div class="average_check">550 ₽</div>
+						<div class="sell_amount">1000</div>
+						<div class="change_amount">190</div>
+					</div>
+
+					<div class="table_row">
+						<div class="cashier_name">Степанов Степан</div>
+						<div class="earnings">77 500,00 ₽</div>
+						<div class="average_check">900 ₽</div>
+						<div class="sell_amount">1390</div>
+						<div class="change_amount">90</div>
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<!-- БЛОК: Товары -->
+			<div class="widget_block  analytics_table">
+				
+				<!-- Заголовок блока -->
+				<div class="widget_block_title_panel">
+					<span class="title_panel_title  vam">Товары</span>
+					<span class="icon-info" b365-tooltip title="
+						<div class='mb8'>Анализ <b>«Товаров»</b> поможет провести ревизию складов.</div>
+						Это позволит:<br>
+						— выявить популярные товары и товары, которые не продаются;<br>
+						— обновить и улучшить ассортимент;<br>
+						— планировать закупки, которые действительно оправдаются.
+						<div class='mt8'>Если какой-то товар практически не продается, а закупили его слишком много — устройте промоакцию, чтобы увеличить продажи</div>">
+					</span>
+					
+					<a class="button  light  small">Подробнее</a>
+				</div>
+
+				<!-- Таблица товаров -->
+				<div class="table  table_analitics">
+					<!-- Классы icon-sort-up и icon-sort-down при сортировке столбцов -->
+					<div class="table_head">
+						<a class="product_name">Наименование товара</a>
+						<a class="sell_amount  icon-sort-down">Кол-во продаж</a>
+						<a class="earnings">Выручка</a>
+						<a class="refunds_amount  icon-sort-up">Кол-во возвратов</a>
+						<a class="refunds_value">Сумма возвратов</a>
+					</div>
+					
+					<div class="table_row">
+						<div class="product_name">Молоко 5,5%</div>
+						<div class="sell_amount">100</div>
+						<div class="earnings">5000 ₽</div>
+						<div class="refunds_amount">10</div>
+						<div class="refunds_value">500,00 ₽</div>
+					</div>
+
+					<div class="table_row">
+						<div class="product_name">Масло сливочное Масло сливочное</div>
+						<div class="sell_amount">100</div>
+						<div class="earnings">7000 ₽</div>
+						<div class="refunds_amount">10</div>
+						<div class="refunds_value">700,00 ₽</div>
+					</div>
+
+					<div class="table_row">
+						<div class="product_name">Чай Мате (Венесуэла)</div>
+						<div class="sell_amount">1000</div>
+						<div class="earnings">140000 ₽</div>
+						<div class="refunds_amount">1</div>
+						<div class="refunds_value">140,00 ₽</div>
+					</div>
+
+					<div class="table_row">
+						<div class="product_name">Хлеб ржаной бездрожжевой</div>
+						<div class="sell_amount">200</div>
+						<div class="earnings">30000 ₽</div>
+						<div class="refunds_amount">0</div>
+						<div class="refunds_value">0,00 ₽</div>
+					</div>
+
+					<div class="table_row">
+						<div class="product_name">Орех Бразильский</div>
+						<div class="sell_amount">40</div>
+						<div class="earnings">55000 ₽</div>
+						<div class="refunds_amount">40</div>
+						<div class="refunds_value">55000,00 ₽</div>
+					</div>
+
+					<div class="table_row">
+						<div class="product_name">Сыр Голландский, 45%</div>
+						<div class="sell_amount">40</div>
+						<div class="earnings">55000 ₽</div>
+						<div class="refunds_amount">40</div>
+						<div class="refunds_value">55000,00 ₽</div>
+					</div>
+
+					<div class="table_row">
+						<div class="product_name">Чай Мате (Венесуэла)</div>
+						<div class="sell_amount">1000</div>
+						<div class="earnings">140000 ₽</div>
+						<div class="refunds_amount">1</div>
+						<div class="refunds_value">140,00 ₽</div>
+					</div>
+
+					<div class="table_row">
+						<div class="product_name">Хлеб ржаной бездрожжевой</div>
+						<div class="sell_amount">200</div>
+						<div class="earnings">30000 ₽</div>
+						<div class="refunds_amount">0</div>
+						<div class="refunds_value">0,00 ₽</div>
+					</div>
+
+					<div class="table_row">
+						<div class="product_name">Орех Бразильский</div>
+						<div class="sell_amount">40</div>
+						<div class="earnings">55000 ₽</div>
+						<div class="refunds_amount">40</div>
+						<div class="refunds_value">55000,00 ₽</div>
+					</div>
+
+					<div class="table_row">
+						<div class="product_name">Сыр Голландский, 45%</div>
+						<div class="sell_amount">40</div>
+						<div class="earnings">55000 ₽</div>
+						<div class="refunds_amount">40</div>
+						<div class="refunds_value">55000,00 ₽</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+</body>
+</html>

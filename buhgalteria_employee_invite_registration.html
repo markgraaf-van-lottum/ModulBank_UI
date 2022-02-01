@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Регистрация</title>
+	<!-- <base href="../../"/> -->
+	<link rel="stylesheet" href="css/style_buhgalteria.css">
+	<link rel="stylesheet" href="css/buhgalteria_page_login.css">
+	<link rel="stylesheet" href="css/other-screens-link.css">
+</head>
+<body>
+<!-- prev/next screen -->
+	<a class="other-screens-link prev" href="TABLES.html"></a>
+	<a class="other-screens-link next" href="buhgalteria.html"></a>
+
+<div class="login reg employee__invite_page">
+
+	<header class="login_header">
+		<a href="#"><strong>Модуль</strong>Бухгалтерия</a>
+	</header>
+
+	<div class="login_section">
+		<div class="login_section_center">
+			<div class="login_title">Регистрация сотрудника</div>
+			<div class="login_content">
+
+				<table>
+					<tbody>
+						<tr>
+							<td class="login_field_label">
+								Имя*
+							</td>
+							<td class="login_field">
+								<input type="text" placeholder="Вероника" size="15">
+							</td>
+						</tr>
+						<tr>
+							<td class="login_field_label">
+								Фамилия*
+							</td>
+							<td class="login_field">
+								<input type="text" placeholder="Иванова" size="15">
+							</td>
+						</tr>
+						<tr>
+							<td class="login_field_label">
+								Пароль*
+							</td>
+							<td class="login_field">
+								<input type="text" placeholder="" size="15">
+							</td>
+						</tr>
+						<tr>
+							<td class="login_field_label">
+								Пароль еще раз*
+							</td>
+							<td class="login_field">
+								<input type="text" placeholder="" size="15">
+							</td>
+						</tr>
+						<tr>
+							<td class="login_field_label">
+								Пол*
+							</td>
+							<td class="login_field employee_gender_choise">
+								<flex>
+									<input type="radio" name="employee_gender" id="employee_gender_woman" checked>
+									<label for="employee_gender_woman" class="label_check circle mr24"><i class="icon"></i><span>Женщина</span></label>
+									<input type="radio" name="employee_gender" id="employee_gender_man">
+									<label for="employee_gender_man" class="label_check circle"><i class="icon"></i><span>Мужчина</span></label>
+								</flex>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<button class="button middle">Зарегистрироваться</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<!-- Комментарий для регистрации комппании -->
+				<!-- Успешная отправка – отображать вместо кнопки отправить (.form_buttons), остальные поля заблокировать-->
+				<!-- <div class="info_success info_icon_success">
+					Мы отправили письмо на указанную электронную почту. Для того, чтобы завершить регистрацию, перейдите по ссылке в письме. Ссылка будет работать 24 часа
+				</div> -->
+
+			</div>
+
+		</div>
+	</div>
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/bootstrap.tooltip.js"></script>
+<script src="js/jquery-validate.bootstrap-tooltip.js"></script>
+<script src="js/select.js"></script>
+<script src="js/init.js"></script>
+</body>
+</html>

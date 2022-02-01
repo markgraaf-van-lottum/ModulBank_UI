@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Добавление товара (Модификаторы)</title>
+	<link rel="stylesheet" href="css/style_kassa.css">
+	<link rel="stylesheet" href="css/other-screens-link.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/init.js"></script>
+</head>
+<body>
+	<!-- prev/next screen -->
+	<a class="other-screens-link prev" href="GK__add.html"></a>
+	<a class="other-screens-link next" href="settings__billing__bills.html"></a>
+
+<!-- <include data-file="kassa_aside.html"></include> -->
+<!-- <include data-file="kassa_header.html"></include> -->
+<!-- <include data-file="products/products.html section.main"></include> -->
+
+<aside class="right_menu">
+	<!-- заголовок -->
+	<div class="sidebar_title">Списки товаров</div>
+
+	<!-- выбор товара -->
+	<div class="right_menu_filter">
+
+		<div class="filter_item  item_all active">
+			<div class="desc">
+				<div class="name">Все товары</div>
+			</div>
+			<div class="value">32 товара</div>
+		</div>
+
+		<!-- Товар -->
+		<div class="filter_item  ">
+			<div class="desc">
+				<div class="name">Фрукты</div>
+			</div>
+			<div class="value">7 товаров</div>
+		</div>
+
+		<!-- Товар -->
+		<div class="filter_item  ">
+			<div class="desc">
+				<div class="name">Овощи</div>
+			</div>
+			<div class="value">25 товаров</div>
+		</div>
+
+
+		<!-- добавить список -->
+		<div class="filter_item add_account">
+			<div class="desc">
+				<div class="name">Товар</div>
+				<span class="num"></span>
+			</div>
+			<div class="value">0,00</div>
+			<a class="link icon-plus">Новый список</a>
+		</div>
+
+	</div>
+	<!-- end выбор счета -->
+</aside>
+
+<header>
+	<div class="header_logo">
+		<a href="#">Модульбанк</a>
+	</div>
+
+	<div class="header_menu free_items">
+		<div class="header_menu_inner">
+			<ul>
+				<li><a><span>Статистика</span></a></li>
+				<li><a><span>Контрагенты</span></a></li>
+				<li><a><span>Скидки</span></a></li>
+				<li><a><span>Документы</span></a></li>
+				<li class="active"><a><span>Товары</span></a></li>
+				<li><a><span>Горячие клавиши</span></a></li>
+				<!-- <li class="active"><a><span>Горячие клавиши</span></a></li> -->
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="header_profile">
+
+		<!-- кнопка выйти -->
+		<div class="header_profile_logout">
+			<a href="#" class="icon-logout"></a>
+		</div>
+
+		<!-- кнопка настроек -->
+		<div class="header_profile_settigs">
+			<a href="#" class="icon-settings"></a>
+		</div>
+
+		<!-- название компании -->
+		<div class="header_profile_name">
+			<a href="#" class="icon-pos drop-target" data-theme="drop_header_pos">Имя ТП</a>
+			<div class="drop-content">
+				<div class="drop-content-inner">
+					<ul class="drop-menu f_small">
+						<li><a class="icon-check">Дмитриевская точка</a></li>
+						<li><a>Ленинский проспект</a></li>
+						<li><a>Ленинский проспект 2</a></li>
+						<li><a>Ленинский проспект 3</a></li>
+						<li><a>Бульвар Славы</a></li>
+						<li><a>Бульвар Славы (Веранда)</a></li>
+						<li><a>Бульвар Славы (Авто)</a></li>
+						<li><a class="icon-settings">Все точки продаж</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</header>
+
+<section class="main">
+
+	<!-- <include data-file="kassa_aside.html"></include> -->
+
+	<div class="section_content full_width">
+
+		<!-- Панель вкладок -->
+		<flex class="title_panel">
+			<div class="tabs_flat  tabs_flat__h1">
+				<a class="tab  tab__active">Все товары</a>
+				<a class="tab">Учет</a>
+				<a class="tab">Остатки</a>
+				<a class="tab">Движение товара</a>
+			</div>
+
+			<div class="title_actions">
+				<a class="button  small  light">Экспорт</a>
+				<a class="button  small  light">Импорт</a>
+				<a class="button  small  icon-plus">Товар</a>
+			</div>
+		</flex>
+
+		<!-- Основной контент -->
+		<table class="table products">
+			<caption>7 товаров</caption>
+			<thead>
+				<tr>
+					<th>
+						<input type="checkbox" id="1">
+						<label for="1" class="label_check">
+							<i class="icon"></i>
+						</label>
+					</th>
+					<!-- При сортировке добавляем классы icon-sort-down / icon-sort-up  -->
+					<th><span>Код</span></th>
+					<th class="icon-sort-down"><span>Наименование</span></th>
+					<th class="icon-sort-up"><span>Штрих-код</span></th>
+					<th><span>Цена</span></th>
+				</tr>
+			</thead>
+			<tr id="search">
+				<td colspan="5">
+					<input type="search" placeholder="Название, артикул или штрих-код товара">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" id="products2" checked>
+					<label for="products2" class="label_check">
+						<i class="icon"></i>
+					</label>
+				</td>
+				<td>123456</td>
+				<td>Молоко Лебедевское, 2,5%</td>
+				<td>483892021313</td>
+				<td>208,00 ₽</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" id="products3">
+					<label for="products3" class="label_check">
+						<i class="icon"></i>
+					</label>
+				</td>
+				<td>12345678901234567890</td>
+				<td>Хлеб Русский</td>
+				<td>023952852</td>
+				<td>22,00 ₽</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" id="products4" checked>
+					<label for="products4" class="label_check">
+						<i class="icon"></i>
+					</label>
+				</td>
+				<td>0135836241414</td>
+				<td>Ряженка Фермерская, 0,5лРяженка Фермерская, 0,5лРяженка Фермерская, 0,5л Ряженка Фермерская, 0,5л</td>
+				<td>9175178391</td>
+				<td>10 008,50 ₽</td>
+			</tr>
+
+			<!-- Ничего не найдено -->
+			<!-- <tr class="no_search_results">
+				<td colspan="5">
+					<div class="light_block">По запросу ничего не найдено</div>
+				</td>
+			</tr> -->
+
+			<!-- Прогрузка строк -->
+			<!-- <tr id="loading_block_row">
+				<td colspan="5" class="loading_block"></td>
+			</tr> -->
+
+		</table>
+
+	</div>
+</section>
+
+<article class="page  open">
+
+	<!-- шапка слоя -->
+	<div class="page_header">
+		<a class="page_close icon-close"></a>
+		<a class="page_expand icon-fullsize"></a>
+		<h1>Добавление товара</h1>
+	</div>
+
+
+	<!-- контент слоя  -->
+	<div class="page_content  with_bottom_panel  content_padding">
+		<div class="tabs_flat">
+			<a class="tab">Информация</a>
+			<a class="tab  tab__active">Модификаторы</a>
+		</div>
+		
+		<a class="icon-plus  add_modificators_group">Добавить группу</a>
+
+		<div class="modificators_group">
+			<div class="modificators_group_title">
+				Гарнир
+				<a class="icon-pencil"></a>
+			</div>
+			<div class="modificators_wrapper">
+				<div>Халапенью
+					<div class="controls">
+						<a class="icon-pencil"></a>
+						<a class="icon-trash-bin"></a>
+					</div>
+				</div>
+				<div class="selected">Ананас
+					<div class="controls">
+						<a class="icon-pencil"></a>
+						<a class="icon-trash-bin"></a>
+					</div>
+				</div>
+				<div>Соус имбирный
+					<div class="controls">
+						<a class="icon-pencil"></a>
+						<a class="icon-trash-bin"></a>
+					</div>
+				</div>
+				<div>Соус брусничный
+					<div class="controls">
+						<a class="icon-pencil"></a>
+						<a class="icon-trash-bin"></a>
+					</div>
+				</div>
+				<div>Соус брусничный
+					<div class="controls">
+						<a class="icon-pencil"></a>
+						<a class="icon-trash-bin"></a>
+					</div>
+				</div>
+				<div class="add_new_modificator">+</div>
+			</div>
+		</div>
+
+		<div class="modificators_group">
+			<div class="modificators_group_title">
+				Соус
+				<a class="icon-pencil"></a>
+			</div>
+			<div class="modificators_wrapper">
+				<div class="selected">Кетчуп
+					<div class="controls">
+						<a class="icon-pencil"></a>
+						<a class="icon-trash-bin"></a>
+					</div>
+				</div>
+				<div class="selected">Сметана
+					<div class="controls">
+						<a class="icon-pencil"></a>
+						<a class="icon-trash-bin"></a>
+					</div>
+				</div>
+				<div class="add_new_modificator">+</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- панель с кнопками -->
+	<div class="page_bottom_panel">
+		<a class="button middle wide">Сохранить</a>
+		<a class="button middle wide clean">Отмена</a>
+	</div>
+
+</article>
+
+</body>
+</html>

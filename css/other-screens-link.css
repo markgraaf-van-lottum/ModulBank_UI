@@ -1,0 +1,45 @@
+.other-screens-link {
+	position: fixed;
+	top: calc(50% - 50px);
+	width: 1em;
+	height: 2em;
+	color: #FFF !important;
+	font-size: 30px;
+	font-weight: bold;
+	background: tomato;
+	border: 2px solid;
+	text-decoration: none;
+	z-index: 10000;
+}
+.other-screens-link.prev {
+	left: 0;
+	border-radius: 0 16px 16px 0;
+	border-left: none;
+}
+.other-screens-link.next {
+	right: 0;
+	border-radius: 16px 0 0 16px;
+	border-right: none;
+}
+.other-screens-link::before {
+	position: absolute;
+	top: 12px;
+	font-family: "icon-font" !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	vertical-align: middle;
+}
+.other-screens-link.prev::before {
+	content: '\00AB';
+	left: 4px;
+}
+.other-screens-link.next::before {
+	content: '\00BB';
+	right: 4px;
+}
